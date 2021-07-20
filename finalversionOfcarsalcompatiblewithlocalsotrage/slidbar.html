@@ -1,4 +1,5 @@
 <head>
+
     <style>
         main {
             width: 100%;
@@ -118,4 +119,31 @@
         }
     }
 
+
+    //notification
+
+    myNotification({
+
+        // close on click
+        closeOnClick: true,
+
+        // displays close button
+        displayCloseButton: false,
+
+        // nfc-top-left
+        // nfc-bottom-right
+        // nfc-bottom-left
+        positionClass: 'nfc-top-right',
+
+        // callback
+        onclick: false,
+
+        // timeout in milliseconds
+        showDuration: 3500,
+
+        // success, info, warning, error, and none
+        theme: 'success'
+
+    });
+    myNotification()
 </script>
