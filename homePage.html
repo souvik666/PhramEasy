@@ -1,40 +1,55 @@
 <head>
-    
-    <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="navbar.css" />
 </head>
 
 <body>
-
-    <div class="logo">logo</div>
-    <div class="searchbox">
-        <!-- Search form -->
-        <button>Select Pincode</button>
-        <input class="search" type="text" placeholder="search for Medicine">
-        <div class="infotab">
-            <div class="texbox"></div>
-            <div class="texbox"></div>
-            <div class="texbox"></div>
-            <div class="texboxright"></div>
-            <div class="texboxright" id="signup"></div>
-            <div class="texboxright"></div>
-
+  <header>
+    <div class="navbar">
+      <div class="navbar-top">
+        <div class="navbar-logo">
+          <img
+            src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png"
+            alt="Pharmeasy logo"
+          />
         </div>
-
-    </div>
-    <div class="lastbar">
-        <div class="lastbox">some text</div>
-    </div>
-
-    <div id="sidebar">
-        <div class="toggle-btn" onclick="toggleSidebar(this)">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="navbar-search">
+          <div id="search-box">
+            <select name="city" id="city">
+              <option value="select-city">Select City</option>
+              <option value="bengaluru">Bengaluru</option>
+              <option value="delhi">Delhi NCR</option>
+              <option value="pune">Pune</option>
+              <option value="mumbai">Mumbai</option>
+            </select>
+            <input type="text" placeholder="Search here" />
+            <button>&#128269;</button>
+          </div>
         </div>
-
-
-
+        <div class="navbar-side">
+          <button onclick="" id="nav-btn">
+            Don't have a prescription? <br /><span>Get started </span
+            ><i class="arrow down"></i>
+          </button>
+        </div>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-tab">
+          <div id="tab-nav">
+            <button class="tab1">Order Medicines</button>
+            <button class="tab1">Healthcare Products</button>
+            <button class="tab1">Diagonstic Tests</button>
+          </div>
+        </div>
+        <div class="navbar-button">
+          <div id="btn-nav">
+            <button class="tab2">Offers</button>
+            <button class="tab2">Login/ Signup</button>
+            <button class="tab2">Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 </body>
-
 
 <script src="loginandsignup.js"></script>
