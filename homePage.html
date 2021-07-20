@@ -55,7 +55,8 @@
             background-color: turquoise;
             float: left;
         }
-        .lastbox{
+
+        .lastbox {
             height: 50px;
             width: 100px;
             background-color: violet;
@@ -75,13 +76,26 @@
             <div class="texbox"></div>
             <div class="texbox"></div>
             <div class="texboxright"></div>
-            <div class="texboxright"></div>
+            <div class="texboxright" id="signup"></div>
             <div class="texboxright"></div>
 
         </div>
 
     </div>
-    <div class="lastbar"><div class="lastbox">some text</div></div>
+    <div class="lastbar">
+        <div class="lastbox">some text</div>
+    </div>
+
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar(this)">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
 
 
 </body>
+
+
+<script src="loginandsignup.js"></script>
