@@ -67,7 +67,9 @@
     <main>
 
         <h1>Add Heading Here</h1>
+        <!-- left slider -->
         <span onclick="slider()">&#139;</span>
+        <!-- right slider -->
         <span onclick="slider()">&#155;</span>
         <section id="products">
             <div>1</div>
@@ -86,12 +88,13 @@
     </main>
 </body>
 <script>
+    // onclikc event for slider
     function slider() {
         let sapn = document.getElementsByTagName("span")
         let div = document.getElementsByTagName("div")
         let l = 0;
         sapn[1].onclick = () => {
-            l++
+            l++//for right scroll
             for (var i of div) {
                 if (l == 0) { i.style.left = "0px" }
                 if (l == 1) { i.style.left = "-740px" }
@@ -102,7 +105,7 @@
             }
         }
         sapn[0].onclick = () => {
-            l--
+            l-- //for left scroll
             for (var i of div) {
                 if (l == 0) { i.style.left = "0px" }
                 if (l == 1) { i.style.left = "-740px" }
