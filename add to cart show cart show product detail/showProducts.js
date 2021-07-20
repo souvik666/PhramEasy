@@ -39,7 +39,7 @@ function appendpro() {
 appendpro();
 
 function addToCart(obj) {
-   let cart = [];
+  let cart = [];
   cart = localStorage.getItem("cart");
   if (cart == null) {
     cart = [];
@@ -48,5 +48,4 @@ function addToCart(obj) {
   }
   cart.push(obj);
   localStorage.setItem("cart", JSON.stringify(cart));
-  
 }
