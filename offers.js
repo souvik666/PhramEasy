@@ -1,4 +1,4 @@
-const offersdata = [
+let offer = [
   {
     metadata: "Flat 20% off + up to Rs.1000 cashback",
     code: "SUPR20",
@@ -79,33 +79,51 @@ const offersdata = [
 
 //puttting the data in local strorage
 if (localStorage.getItem("offers") == null) {
-  localStorage.setItem("offers", JSON.stringify(offersdata));
+  localStorage.setItem("offers", JSON.stringify(offer));
 }
 // making html structure for cards
 function appendpro() {
-  const data = JSON.parse(localStorage.getItem("offers"));
-  const mainDiv = document.getElementById("products");
+  let data = JSON.parse(localStorage.getItem("offers"));
+  let mainDiv = document.getElementById("products");
   data.forEach(function (el) {
     //target this
-    const div = document.createElement("div");
+    let div = document.createElement("div");
     div.setAttribute("class", "offersbox");
+
+    /*    //product name
+      let p_name = document.createElement("p");
+      p_name.innerHTML = el.name; */
+
+    /*     //product price
+      let p_Price = document.createElement("p");
+      p_Price.innerHTML = ` ${
+        100 - (p_Price.innerHTML % Math.floor(Math.random() * 10))
+      } `;
+      //console.log(p_Price.innerHTML/2)
+  
+      //discount data
+      disdata = p_Price.innerHTML % Math.floor(Math.random() * 10);
+  
+      let discount = document.createElement("p");
+      discount.innerHTML = `<del>${el.price}</del>`; */
+
     //code
-    const code = document.createElement("p");
+    let code = document.createElement("p");
     code.innerHTML = `CODE: <strong>${el.code}</strong>`;
     code.setAttribute("class", "codetext");
 
     //meta data
-    const meta = document.createElement("p");
+    let meta = document.createElement("p");
     meta.innerHTML = el.metadata;
     meta.style.fontWeight = "lighter";
 
     //button
-    const btn = document.createElement("button");
+    let btn = document.createElement("button");
     btn.textContent = "Add to cart";
     btn.addEventListener("click", function () {
       addToCart(el);
     });
-    const img = document.createElement("img");
+    let img = document.createElement("img");
     img.src = el.img;
     div.append(img, meta, code);
     mainDiv.append(div);
@@ -115,67 +133,56 @@ function appendpro() {
   });
 }
 appendpro();
-//add to cart method
-function addToCart(obj) {
-  const cart = [];
-  cart = localStorage.getItem("cart");
-  if (cart == null) {
-    cart = [];
-  } else {
-    cart = JSON.parse(localStorage.getItem("cart"));
-  }
-  cart.push(obj);
-  localStorage.setItem("cart", JSON.stringify(cart));
-}
 
-// function slider() {
-//   const sapn = document.getElementsByTagName("span");
-//   const div = document.getElementsByTagName("div");
-//   const l = 0;
-//   sapn[0].onclick = () => {
-//     l++; //for right scroll
-//     for (var i of div) {
-//       if (l == 0) {
-//         i.style.left = "0px";
-//       }
-//       if (l == 1) {
-//         i.style.left = "-740px";
-//       }
-//       if (l == 2) {
-//         i.style.left = "-1480px";
-//       }
-//       /* if (l == 3) { i.style.left = "-2220px" } */
-//       /* if (l == 4) { i.style.left = "-2967px" } */
-//       if (l > 4) {
-//         l = 4;
-//       }
-//     }
-//   };
-//   sapn[1].onclick = () => {
-//     l--; //for left scroll
-//     for (var i of div) {
-//       if (l == 0) {
-//         i.style.left = "0px";
-//       }
-//       if (l == 1) {
-//         i.style.left = "-740px";
-//       }
-//       if (l == 2) {
-//         i.style.left = "-1480px";
-//       }
-//       /*                 if (l == 3) { i.style.left = "-2220px" }
-//        */
-//       if (l < 0) {
-//         l = 0;
-//       }
-//     }
-//   };
-// }
-// // mouse over function for both arrows
-// const sapn = document.getElementById("arrow1");
-// sapn.addEventListener("mouseover", function () {
-//   sapn.style.background = "#f4f4f4";
-// });
-// sapn.addEventListener("mouseout", function () {
-//   sapn.style.background = "";
-// });
+function slider() {
+  let sapn = document.getElementById("offers").getElementsByTagName("span");
+  let div = document.getElementById("offers").getElementsByTagName("div");
+  let l = 0;
+  sapn[0].onclick = () => {
+    l++; //for right scroll
+    for (var i of div) {
+      if (l == 0) {
+        i.style.left = "0px";
+      }
+      if (l == 1) {
+        i.style.left = "-740px";
+      }
+      if (l == 2) {
+        i.style.left = "-1480px";
+      }
+      /* if (l == 3) { i.style.left = "-2220px" } */
+      /* if (l == 4) { i.style.left = "-2967px" } */
+      if (l > 4) {
+        l = 4;
+      }
+    }
+  };
+  sapn[1].onclick = () => {
+    l--; //for left scroll
+    for (var i of div) {
+      if (l == 0) {
+        i.style.left = "0px";
+      }
+      if (l == 1) {
+        i.style.left = "-740px";
+      }
+      if (l == 2) {
+        i.style.left = "-1480px";
+      }
+      /*                 if (l == 3) { i.style.left = "-2220px" }
+       */
+      if (l < 0) {
+        l = 0;
+      }
+    }
+  };
+}
+// mouse over function for both arrows
+let sapn = document.getElementById("arrow1");
+sapn.addEventListener("mouseover", function () {
+  sapn.style.background = "#f4f4f4";
+});
+sapn.addEventListener("mouseout", function () {
+  sapn.style.background = "";
+});
+slider();
