@@ -8,7 +8,7 @@ let data = [
     localStorage.setItem("sliderimg", JSON.stringify(data));
   }
   function slider() {
-    let div = document.getElementById("slider");
+    let div = document.getElementById("slideshow-container");
     let img = document.createElement("img");
     img.src = data[0];
     div.append(img);

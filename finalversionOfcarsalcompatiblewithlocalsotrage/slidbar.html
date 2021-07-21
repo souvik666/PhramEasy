@@ -46,23 +46,24 @@
         }
 
         section div {
-            min-width: 330px;
+            
             height: 200px;
             position: relative;
             left: 0;
             text-align: center;
-            padding-top: 60px;
+            
             font-size: 100px;
             font-weight: bold;
             margin: 10px 20px;
-            color: white;
-            background: chocolate;
+            color: rgb(14, 13, 13);
+            background: rgb(255, 255, 255);
             transition: 0.5s;
         }
 
         section img {
             height: 100px;
             width: 100px;
+            border: 1px solid black;
         }
 
         section p {
@@ -122,28 +123,5 @@
 
     //notification
 
-    myNotification({
-
-        // close on click
-        closeOnClick: true,
-
-        // displays close button
-        displayCloseButton: false,
-
-        // nfc-top-left
-        // nfc-bottom-right
-        // nfc-bottom-left
-        positionClass: 'nfc-top-right',
-
-        // callback
-        onclick: false,
-
-        // timeout in milliseconds
-        showDuration: 3500,
-
-        // success, info, warning, error, and none
-        theme: 'success'
-
-    });
-    myNotification()
+   
 </script>
