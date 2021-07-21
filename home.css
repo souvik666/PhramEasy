@@ -1,0 +1,33 @@
+/* All the main changes in homepage design will be done here. */
+#safety-measures {
+  display: flex;
+  flex-direction: row;
+}
+#safety-measures > div {
+  height: 125px;
+  margin: 1%;
+}
+#safety-measures img {
+  height: 100%;
+}
+#main-offer {
+  height: 150px;
+  margin: 1%;
+}
+#main-offer > img {
+  height: 100%;
+}
+#main-orders {
+  display: flex;
+  flex-direction: row;
+}
+#main-orders > div {
+  height: 195px;
+  margin: 1%;
+  flex-basis: 30%;
+}
+#main-orders img {
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid silver;
+}
