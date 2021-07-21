@@ -1,0 +1,128 @@
+<head>
+    <style>
+        #box {
+            height: 30px;
+            color: rgb(255, 96, 123);
+            float: left;
+            margin: 5%;
+        }
+
+        .container {
+            width: 100%;
+            height: 300px;
+            background-color: pink;
+
+        }
+
+        .container img {
+            float: left;
+            margin-top: 5%;
+        }
+
+        #slogan {
+            float: left;
+            margin: 5%;
+        }
+
+        .bar {
+            height: 80px;
+            width: 5px;
+            background-color: rgb(255, 130, 255);
+            float: left;
+            margin-top: 5%;
+        }
+
+        /* products setion */
+        main {
+            width: 100%;
+            height: 400px;
+            margin: 200px auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        h1 {
+            width: 90%;
+            margin: 10px auto;
+            background: blue;
+        }
+
+        span {
+            position: absolute;
+            top: 40%;
+            font-size: 60px;
+            font-weight: bold;
+            color: black;
+            cursor: pointer;
+            left: .5%;
+            z-index: 1;
+        }
+
+        span:nth-of-type(2) {
+            left: 98%;
+            text-align: right;
+        }
+
+        section {
+            width: 98%;
+            height: 300px;
+            background: #f4f4f4;
+            margin: 10px auto;
+            display: flex;
+            justify-content: left;
+            overflow-x: auto;
+        }
+
+        section::-webkit-scrollbar {
+            visibility: hidden;
+        }
+
+        section div {
+
+            height: 200px;
+            position: relative;
+            left: 0;
+            text-align: center;
+
+            font-size: 100px;
+            font-weight: bold;
+            margin: 10px 20px;
+            color: rgb(14, 13, 13);
+            background: rgb(255, 255, 255);
+            transition: 0.5s;
+        }
+
+        section img {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+        }
+
+        section p {
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://assets.pharmeasy.in/web-assets/dist/cc9b301d.svg">
+
+        <div id="slogan">Deals of the Day</div>
+        <div class="bar"></div>
+        <div id="box"></div>
+        <main>
+            <!-- left slider -->
+            <span onclick="slider()">&#139;</span>
+            <!-- right slider -->
+            <span onclick="slider()">&#155;</span>
+            <!-- add and div and style the childs inide the div with your css -->
+            <section id="products">
+            </section>
+        </main>
+        <div id="products"></div>
+    </div>
+</body>
+<script src="timer.js">
+
+</script>
