@@ -1,0 +1,48 @@
+<head>
+    <style>
+        #slider {
+            height: 300px;
+            width: 100%;
+        }
+
+        #slider img {
+            height: 300px;
+            width: 500px;
+        }
+
+        #right {
+            float: left;
+        }
+
+        #right,
+        #left {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: rgb(236, 2, 2);
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        #right {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="slider">
+
+    </div>
+    <div id="right">&#10094;</div>
+    <div id="left">&#10095;</div>
+
+</body>
+<script src="test.js"></script>

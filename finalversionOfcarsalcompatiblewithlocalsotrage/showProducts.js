@@ -72,11 +72,11 @@ let data = [
       "Horlicks Classic Malt Nutrition Drink Jar of 500g is a highly nutritious drink. Drinking the suggested serving of Horlicks regularly is scientifically proven to improve growth in children, increasing both height and weight visibly within 90 days.",
   },
 ];
-
+//puttting the data in local strorage
 if (localStorage.getItem("pro") == null) {
   localStorage.setItem("pro", JSON.stringify(data));
 }
-
+// making html structure for cards
 function appendpro() {
   let data = JSON.parse(localStorage.getItem("pro"));
   let mainDiv = document.getElementById("products");
@@ -101,7 +101,7 @@ function appendpro() {
   });
 }
 appendpro();
-
+//add to cart method
 function addToCart(obj) {
   let cart = [];
   cart = localStorage.getItem("cart");
