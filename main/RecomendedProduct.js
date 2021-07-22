@@ -94,7 +94,7 @@ function appendpro() {
     //target this
     let div = document.createElement("div");
     div.setAttribute("class", "RecomendedProduct");
-    div.style.cursor="pointer"
+    div.style.cursor = "pointer";
     //product name
     let p_name = document.createElement("p");
     p_name.innerHTML = el.name;
@@ -132,6 +132,7 @@ function appendpro() {
     div.append(img, p_name, meta, discount, p_Price);
     mainDiv.append(div);
     div.addEventListener("click", function () {
+      window.open("showProductdetails.html");
       showdetail(el);
     });
   });
@@ -207,7 +208,6 @@ function slider() {
 slider();
 
 function showdetail(el) {
-  localStorage.setItem("prodetaails", JSON.stringify(el));
+  //localStorage.setItem("prodetaails", JSON.stringify(el));
   // refere this code -->https://github.com/souvik666/PhramEasy/blob/structure/productdetails/productDetails.js
-  //window.location.href = "show.html";
 }

@@ -218,7 +218,7 @@ function slider() {
 }
 slider();
 function showdetail(el) {
-  localStorage.setItem("prodetaails", JSON.stringify(el));
   // refere this code -->https://github.com/souvik666/PhramEasy/blob/structure/productdetails/productDetails.js
-  //window.location.href = "show.html";
+  // window.location.href = "showProductdetails.html";
+  //localStorage.setItem("prodetaails", JSON.stringify(el));
 }
