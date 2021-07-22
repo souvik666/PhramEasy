@@ -14,9 +14,9 @@ function appenddetails(el) {
 }
 
 function showprodetail() {
-  let data = JSON.parse(localStorage.getItem("pro"));
+  let data = JSON.parse(localStorage.getItem("prodetails"));
   data.forEach(function (el) {
     appenddetails(el);
   });
 }
-showprodetail();
+showprodetail()
