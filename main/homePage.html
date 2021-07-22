@@ -1,9 +1,44 @@
 <head>
   <link rel="stylesheet" href="navbar.css" />
   <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="sideDrawer.css">
 </head>
 
 <body>
+
+<!-- Side drawer -->
+    <div class="side-drawer">
+      <div class="drawerbar" id="drawerID">
+        <button
+          type="button"
+          onclick="myDrawer(this)"
+          class="toggle-collapse"
+          id="toggle-button"
+        >
+          <span class="toggle-icon"><br />X</span>
+        </button>
+        <div class="site-div">
+          <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" />
+        </div>
+        <h3 class="drawer-link">Quick Login/ Register</h3>
+        <div class="drawer-item">
+          <input
+            type="number"
+            step="0.01"
+            class="drawer-link"
+            placeholder="Enter your phone number"
+          />
+        </div>
+        <button type="button" id="continue-btn">Continue</button>
+        <h6>
+          By clicking continue, you agree with our
+          <a href="#">Privacy Policy</a>
+        </h6>
+      </div>
+    </div>
+    <!-- End of Side drawer -->
+
+
   <header id="nav-head">
     <div class="navbar">
       <div class="navbar-top">
@@ -494,6 +529,6 @@ Recomended Product list -->
 
 
 
-<script>
+<script src="drawer.js">
 
 </script>
