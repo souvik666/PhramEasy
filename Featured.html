@@ -1,0 +1,133 @@
+<head>
+
+    <style>
+        main {
+            width: 100%;
+            /* height: 400px;
+            margin: 200px auto; */
+            overflow: hidden;
+            position: relative;
+        }
+
+        span {
+            position: absolute;
+            top: 40%;
+            font-size: 60px;
+            font-weight: bold;
+            color: black;
+            cursor: pointer;
+            left: .5%;
+            z-index: 1;
+        }
+
+        span:nth-of-type(2) {
+            left: 98%;
+            text-align: right;
+        }
+
+        section {
+            width: 98%;
+            height: 250px;
+            background: white;
+            margin: 10px auto;
+            display: flex;
+            justify-content: left;
+            overflow-x: auto;
+        }
+
+        section::-webkit-scrollbar {
+            visibility: hidden;
+        }
+
+        section div {
+            
+            height: 200px;
+            position: relative;
+            left: 0;
+            /* text-align: center; */
+            
+            font-size: 100px;
+            font-weight: bold;
+            margin: 10px 20px;
+            color: rgb(14, 13, 13);
+            background: rgb(255, 255, 255);
+            transition: 0.5s;
+        }
+
+        section img {
+            height: 220px;
+            width: 150px;
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        section p {
+            font-size: small;
+        }
+        .classname{
+            width: 250px;
+            /* border: 1px solid blue; */
+        }
+        .classname{
+            border-radius: 10px;
+        }
+        img{
+            margin-bottom: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+
+        <h2>Featured Brands</h2>
+        <!-- left slider -->
+        <span onclick="slider()">&#139;</span>
+        <!-- right slider -->
+        <span onclick="slider()">&#155;</span>
+        <!-- add and div and style the childs inide the div with your css -->
+        <section id="products">
+
+
+        </section>
+    </main>
+</body>
+<script src="Featured.js"></script>
+<script>
+    // onclikc event for slider
+    function slider() {
+        let sapn = document.getElementsByTagName("span")
+        let div = document.getElementsByTagName("div")
+        let l = 0;
+        sapn[1].onclick = () => {
+            l++//for right scroll
+            for (var i of div) {
+                if (l == 0) { i.style.left = "0px" }
+                if (l == 1) { i.style.left = "-740px" }
+                if (l == 2) { i.style.left = "-1480px" }
+                if (l == 3) { i.style.left = "-2220px" }
+                if (l == 4) { i.style.left = "-2967px" }
+                if (l > 4) { l = 4 }
+            }
+        }
+        sapn[0].onclick = () => {
+            l-- //for left scroll
+            for (var i of div) {
+                if (l == 0) { i.style.left = "0px" }
+                if (l == 1) { i.style.left = "-740px" }
+                if (l == 2) { i.style.left = "-1480px" }
+                if (l == 3) { i.style.left = "-2220px" }
+
+                if (l < 0) { l = 0 }
+            }
+        }
+    }
+
+
+    //notification
+
+   
+</script>
