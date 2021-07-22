@@ -1,6 +1,6 @@
 <head>
     <style>
-        #offers>span {
+        #slider3>span {
             float: right;
             top: 40%;
             font-size: 60px;
@@ -15,7 +15,7 @@
             left: 98%;
             text-align: right;
         } */
-        #offers>section {
+        #slider3>section {
             width: 98%;
             height: 120px;
             background: #ffffff;
@@ -25,18 +25,18 @@
             overflow-x: auto;
         }
 
-        #offers>section::-webkit-scrollbar {
+        #slider3>section::-webkit-scrollbar {
             visibility: hidden;
         }
 
-        #offers>section>div {
+        #slider3>section>div {
 
             height: 85px;
-            min-width: 200px;
+            min-width: 100px;
             position: relative;
             left: 0;
             text-align: center;
-            border: 0.5px solid rgb(170, 169, 169);
+           /*  border: 0.5px solid rgb(170, 169, 169); */
             font-size: 100px;
             font-weight: bold;
             margin: 10px 20px;
@@ -45,33 +45,32 @@
             transition: 0.5s;
         }
 
-        #offers>section img {
+        #slider3>section img {
             margin: 5%;
             margin-bottom: 2%;
-            height: 50px;
-            width: 50px;
-            /* border: 1px solid black; */
-            float: left;
+            height: 100%;
+            width: 100%;
+
         }
 
-        #offers>section p {
+        #slider3>section p {
             font-size: small;
         }
 
-        #offers>.list {
+        #slider3>.list {
             width: 200px;
         }
 
-        #offers>.codetext {
+        #slider3>.codetext {
             color: rgb(17, 17, 19);
             font-weight: lighter;
         }
 
-        #offers>.offersbox {
+        #slider3>.offersbox {
             border-radius: 5px;
         }
 
-        #offers>#offersheadtag {
+        #slider3>#offersheadtag {
             font-size: medium !important;
             float: right !important;
             margin-top: 34px;
@@ -80,7 +79,7 @@
 
         }
 
-        #offers>#rightoffersheadtag {
+        #slider3>#rightoffersheadtag {
             font-size: medium !important;
             float: left !important;
             margin-top: 34px;
@@ -89,7 +88,7 @@
 
         }
 
-        #offers>#offerlogo {
+        #slider3>#offerlogo {
             font-size: medium !important;
             float: left !important;
             margin-top: 15px;
@@ -103,19 +102,17 @@
 
 <body>
 
-    <div id="offers">
+    <div id="slider3">
         <!-- left slider -->
         <span id="arrow1" onclick="slider()">&#8594;</span>
         <span id="arrow2" onclick="slider()">&#8592;</span>
-        <span id="offersheadtag">See All Offers</span>
-        <img id="offerlogo" src="https://assets.pharmeasy.in/web-assets/dist/67890676.svg" />
-        <span id="rightoffersheadtag">Offers For you</span>
+        <span id="rightoffersheadtag">Featured Brands</span>
 
 
         <!-- right slider -->
 
         <!-- add and div and style the childs inide the div with your css -->
-        <section id="products">
+        <section id="features">
         </section>
     </div>
 </body>
@@ -123,8 +120,8 @@
 <script>
 
     function slider() {
-        let sapn = document.getElementById("offers").getElementsByTagName("span")
-        let div = document.getElementById("offers").getElementsByTagName("div");
+        let sapn = document.getElementById("slider3").getElementsByTagName("span")
+        let div = document.getElementById("slider3").getElementsByTagName("div");
         let l = 0;
         sapn[0].onclick = () => {
             l++; //for right scroll

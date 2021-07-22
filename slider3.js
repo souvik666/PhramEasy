@@ -98,6 +98,33 @@ let features = [
     description:
       "Horlicks Classic Malt Nutrition Drink Jar of 500g is a highly nutritious drink. Drinking the suggested serving of Horlicks regularly is scientifically proven to improve growth in children, increasing both height and weight visibly within 90 days.",
   },
+  {
+    name: "Cadbury Bournvita Lil Champs Nutrition Drink Jar Of 500 G",
+    metadata: "500 gm powder in jar",
+    price: "115",
+    img:
+      "https://cms-contents.pharmeasy.in/carousel_item/15970af32f6-Featured-Baidyanath.jpg?dim=146x0&dpr=1&q=100",
+    description:
+      "Horlicks Classic Malt Nutrition Drink Jar of 500g is a highly nutritious drink. Drinking the suggested serving of Horlicks regularly is scientifically proven to improve growth in children, increasing both height and weight visibly within 90 days.",
+  },
+  {
+    name: "Cadbury Bournvita Lil Champs Nutrition Drink Jar Of 500 G",
+    metadata: "500 gm powder in jar",
+    price: "115",
+    img:
+      "https://cms-contents.pharmeasy.in/carousel_item/15970af32f6-Featured-Baidyanath.jpg?dim=146x0&dpr=1&q=100",
+    description:
+      "Horlicks Classic Malt Nutrition Drink Jar of 500g is a highly nutritious drink. Drinking the suggested serving of Horlicks regularly is scientifically proven to improve growth in children, increasing both height and weight visibly within 90 days.",
+  },
+  {
+    name: "Cadbury Bournvita Lil Champs Nutrition Drink Jar Of 500 G",
+    metadata: "500 gm powder in jar",
+    price: "115",
+    img:
+      "https://cms-contents.pharmeasy.in/carousel_item/15970af32f6-Featured-Baidyanath.jpg?dim=146x0&dpr=1&q=100",
+    description:
+      "Horlicks Classic Malt Nutrition Drink Jar of 500g is a highly nutritious drink. Drinking the suggested serving of Horlicks regularly is scientifically proven to improve growth in children, increasing both height and weight visibly within 90 days.",
+  },
 ];
 //puttting the data in local strorage
 if (localStorage.getItem("features") == null) {
@@ -201,3 +228,56 @@ function addToCart(obj) {
 // sapn.addEventListener("mouseout", function () {
 //   sapn.style.background = "";
 // });
+
+function slider() {
+  let sapn = document.getElementById("slider3").getElementsByTagName("span");
+  let div = document.getElementById("slider3").getElementsByTagName("div");
+  let l = 0;
+  sapn[0].onclick = () => {
+    l++; //for right scroll
+    for (var i of div) {
+      if (l == 0) {
+        i.style.left = "0px";
+      }
+      if (l == 1) {
+        i.style.left = "-740px";
+      }
+    /*   if (l == 2) {
+        i.style.left = "-1480px";
+      } */
+      /* if (l == 3) { i.style.left = "-2220px" } */
+      /* if (l == 4) { i.style.left = "-2967px" } */
+      if (l > 2) {
+        l = 2;
+      }
+    }
+  };
+  sapn[1].onclick = () => {
+    l--; //for left scroll
+    for (var i of div) {
+      if (l == 0) {
+        i.style.left = "0px";
+      }
+     /*  if (l == 1) {
+        i.style.left = "-740px";
+      }
+      if (l == 2) {
+        i.style.left = "-1480px";
+      } */
+      /*                 if (l == 3) { i.style.left = "-2220px" }
+       */
+      if (l < 0) {
+        l = 0;
+      }
+    }
+  };
+}
+// mouse over function for both arrows
+/* let sapn = document.getElementById("arrow1");
+sapn.addEventListener("mouseover", function () {
+  sapn.style.background = "#f4f4f4";
+});
+sapn.addEventListener("mouseout", function () {
+  sapn.style.background = "";
+}); */
+slider();

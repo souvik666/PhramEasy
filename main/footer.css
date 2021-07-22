@@ -1,0 +1,93 @@
+#parent{
+            max-width: 95%;
+            margin: auto;
+        }
+
+        .frame{
+             margin: auto;  
+             display: grid;
+             width: 100%;
+               grid-gap:10px;
+              padding: 5px;
+              grid-template: "a c d f"
+                             "b c e f";
+
+        }
+
+        .block1{
+               grid-area: a;
+        }
+         .block2{
+               grid-area: b;
+        }
+         .block3{
+               grid-area: c;
+        }
+         .block4{
+               grid-area: d;
+        }
+         .block5{
+               grid-area: e;
+        }
+        .block6{
+               grid-area: f;
+        }
+        .block7{
+            width: 100%;
+        }
+
+        .block7 img{ 
+            max-width: 35px;
+            height: 25px;
+            padding: 5px;
+            margin-bottom: 30px;
+        }
+
+        .block7 span{
+            float: right;
+        }
+     
+        .block6 img{
+            max-width: 30px;
+            height: 30px;
+            margin: 5px;
+        }
+
+        .frame div, span{
+            margin-top: 10px;
+            font-family: Open Sans,sans-serif!important;
+            font-size: 12px!important;
+            color: #4f585e;
+            text-rendering: optimizeLegibility;
+           -webkit-font-smoothing: antialiased;
+            font-weight: 400;
+        }
+           div .hedding{
+              font-size: 16px;
+              font-weight: 700;
+              letter-spacing: 0;
+              text-align: left;
+              color: #4F585E;
+            
+        }
+        .block7 .hedding, .block7 img{
+            margin-top: 10px;
+        }
+         .companyDescription p{
+                font-size: 12px;
+                display: inline-block;
+                color: #4F585E;
+                font-weight: 400;
+
+        }
+
+        .paraHeadding{
+        font-family: "Open Sans", sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+         margin: 10px 0px;
+         color: #4F585E;
+       
+        }
+
+  
