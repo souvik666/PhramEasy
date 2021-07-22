@@ -226,8 +226,8 @@ function appendpro() {
 
     div.append(img, p_name, discount, p_Price);
     mainDiv.append(div);
-    img.addEventListener("click", function () {
-      window.location.href = "producdetail.html";
+    div.addEventListener("click", function () {
+      window.open("showProductdetails.html")
     });
   });
 }
