@@ -125,16 +125,46 @@ function showOffers() {
     h4.style.fontSize = "0.9rem";
     div.style.font = "inherit";
     a.style.textDecoration = "none";
-    a.style.color = "green";
+    a.style.color = "#37857E";
     code.style.marginTop = "3%";
     a.style.marginTop = "3%";
   });
 }
-
 showOffers();
 
-if (mainDiv.className === "offers") {
-  mainDiv.className += " active";
-} else {
-  mainDiv.className = "offers active";
+let offDiv = document.getElementById("off-details");
+function showOffDetails() {
+  let div1 = document.createElement("div");
+  let div2 = document.createElement("div");
+  let div3 = document.createElement("div");
+  let div4 = document.createElement("div");
+  let oneh5 = document.createElement("h5");
+  oneh5.innerHTML = "Total No. of Offers";
+  let oneh4 = document.createElement("h4");
+  oneh4.innerHTML = "10";
+  div1.append(oneh5, oneh4);
+  let twoh5 = document.createElement("h5");
+  twoh5.innerHTML = "Discount for New Users";
+  let twoh4 = document.createElement("h4");
+  twoh4.innerHTML = "18% OFF";
+  div2.append(twoh5, twoh4);
+  let threeh5 = document.createElement("h5");
+  threeh5.innerHTML = "Discount for All Users";
+  let threeh4 = document.createElement("h4");
+  threeh4.innerHTML = "15% OFF";
+  div3.append(threeh5, threeh4);
+  let fourh5 = document.createElement("h5");
+  fourh5.innerHTML = "Additional Offers";
+  let fourh4 = document.createElement("h4");
+  fourh4.innerHTML = "Cashbacks & shopping <br> Vouchers";
+  div4.append(fourh5, fourh4);
+  offDiv.append(div1, div2, div3, div4);
+  offDiv.style.display = "flex";
+  offDiv.style.padding = "1% 10%";
+  offDiv.style.color = "#37857E";
+  div1.style.margin = "5%";
+  div2.style.margin = "5%";
+  div3.style.margin = "5%";
+  div4.style.margin = "5%";
 }
+showOffDetails();

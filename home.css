@@ -763,14 +763,14 @@ span {
 
 /* slider3 */
 
-#slider3>span {
+#slider3 > span {
   float: right;
   top: 40%;
   font-size: 60px;
   font-weight: bold;
   color: black;
   cursor: pointer;
-  left: .5%;
+  left: 0.5%;
   z-index: 1;
 }
 
@@ -778,7 +778,7 @@ span {
   left: 98%;
   text-align: right;
 } */
-#slider3>section {
+#slider3 > section {
   width: 98%;
   height: 120px;
   background: #ffffff;
@@ -788,18 +788,17 @@ span {
   overflow-x: auto;
 }
 
-#slider3>section::-webkit-scrollbar {
+#slider3 > section::-webkit-scrollbar {
   visibility: hidden;
 }
 
-#slider3>section>div {
-
+#slider3 > section > div {
   height: 85px;
   min-width: 100px;
   position: relative;
   left: 0;
   text-align: center;
- /*  border: 0.5px solid rgb(170, 169, 169); */
+  /*  border: 0.5px solid rgb(170, 169, 169); */
   font-size: 100px;
   font-weight: bold;
   margin: 10px 20px;
@@ -808,54 +807,47 @@ span {
   transition: 0.5s;
 }
 
-#slider3>section img {
+#slider3 > section img {
   margin: 5%;
   margin-bottom: 2%;
   height: 100%;
   width: 100%;
-
 }
 
-#slider3>section p {
+#slider3 > section p {
   font-size: small;
 }
 
-#slider3>.list {
+#slider3 > .list {
   width: 200px;
 }
 
-#slider3>.codetext {
+#slider3 > .codetext {
   color: rgb(17, 17, 19);
   font-weight: lighter;
 }
 
-#slider3>.offersbox {
+#slider3 > .offersbox {
   border-radius: 5px;
 }
 
-#slider3>#offersheadtag {
+#slider3 > #offersheadtag {
   font-size: medium !important;
   float: right !important;
   margin-top: 34px;
   margin-right: 25px;
-
-
 }
 
-#slider3>#rightoffersheadtag {
+#slider3 > #rightoffersheadtag {
   font-size: medium !important;
   float: left !important;
   margin-top: 34px;
   margin-right: 25px;
-
-
 }
 
-#slider3>#offerlogo {
+#slider3 > #offerlogo {
   font-size: medium !important;
   float: left !important;
   margin-top: 15px;
   margin-right: 10px;
-
-
 }
