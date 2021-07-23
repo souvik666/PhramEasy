@@ -18,7 +18,7 @@
       <div class="site-div">
         <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" />
       </div>
-      <h3 class="drawer-link">Quick Login/ Register</h3>
+      <h3 class="drawer-link">Quick Login</h3>
       <div class="drawer-item">
         <ul>
           <li><input type="email"  class="drawer-link" placeholder="Enter your email" /></li>
@@ -26,11 +26,14 @@
         </ul>
         
       </div>
-      <button type="button" id="continue-btn">Continue</button>
+      <button type="button" id="continue-btn">Login</button>
       <h6>
         By clicking continue, you agree with our
-        <a href="#">Privacy Policy</a>
+        <a href="#">Privacy Policy</a> <br>
       </h6>
+      <h5>Don't have an account?</h5>
+      <button type="button" id="continue-btn" onclick="registerHere()">Register Here</button>
+      
     </div>
   </div>
   <!-- End of Side drawer -->
@@ -76,7 +79,7 @@
         <div class="navbar-button">
           <div id="btn-nav">
             <button class="tab2">Offers</button>
-            <button class="tab2">Login/ Signup</button>
+            <button class="tab2" onclick="openDrawer()">Login/ Signup</button>
             <button class="tab2">Cart</button>
           </div>
         </div>
