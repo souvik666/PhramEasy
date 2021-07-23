@@ -1,4 +1,5 @@
 /* All the main changes in homepage design will be done here. */
+
 #safety-measures {
   display: flex;
   flex-direction: row;
@@ -202,6 +203,7 @@ body {
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+  margin-top: -100px;
 }
 /* Position the "next button" to the right */
 .next {
@@ -263,6 +265,7 @@ body {
   top: 55%;
   left: 50%;
   margin-left: -50px;
+  margin-top: -82px;
 }
 
 #parent {
