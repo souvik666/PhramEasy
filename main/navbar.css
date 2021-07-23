@@ -1,6 +1,8 @@
 body {
   margin: 0;
 }
+
+
 .navbar {
   display: flex;
   width: 100%;
@@ -49,7 +51,7 @@ body {
 }
 #city {
   height: 95%;
-  width: 100px;
+  width: 110px !important;
   color: #37857e;
   font-size: 1rem;
   border-top-left-radius: 5px;

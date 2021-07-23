@@ -1,71 +1,255 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <style>
-        #productimgeBox {
-            height: 330px;
-            width: 230px;
-            float: left;
-            border: 1px solid grey;
-
-        }
-
-        .checked {
-            color: orange;
-        }
-
-        .productImg {
-            margin-top: 50px;
-            margin-left: 10px;
-        }
-
-        #productDetailsBox {
-            height: 180px;
-            background-color: rgb(255, 255, 255);
-            float: left;
-            margin-left: 5%;
-            width: 400px;
-        }
-
-        #smallimgbox {
-
-            clear: both;
-
-        }
-
-        .divbar {
-            height: 10px;
-            width: 100%;
-
-
-        }
-
-        .addtocartButton {
-            background-color: teal;
-            height: 40px;
-            width: 120px;
-            border: 0px;
-            border-radius: 3px;
-            color: wheat;
-            float: right;
-            margin-top: 10px;
-
-
-        }
-
-        #smallimgbox img {
-            height: 100px;
-            width: 100px;
-
-        }
-    </style>
+     <link rel="stylesheet" href="ShowProductdetails1.css">
+     <link rel="stylesheet" href="navbar.css">
+   
+        
 </head>
 
 <body>
+
+ <header id="nav-head">
+    <div class="navbar">
+      <div class="navbar-top">
+        <div class="navbar-logo">
+          <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="Pharmeasy logo" />
+        </div>
+        <div class="navbar-search">
+          <div id="search-box">
+            <select name="city" id="city">
+              <option value="select-city">Select City</option>
+              <option value="bengaluru">Bengaluru</option>
+              <option value="delhi">Delhi NCR</option>
+              <option value="pune">Pune</option>
+              <option value="mumbai">Mumbai</option>
+            </select>
+            <input class="search-input" type="text" placeholder="Search here" />
+            <div id="suggestion">
+
+
+            </div>
+            <button>&#128269;</button>
+          </div>
+        </div>
+        <div class="navbar-side">
+          <button onclick="" id="nav-btn">
+            Don't have a prescription? <br /><span>Get started </span><i class="arrow down"></i>
+          </button>
+        </div>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-tab">
+          <div id="tab-nav">
+            <button class="tab1">Order Medicines</button>
+            <button class="tab1">Healthcare Products</button>
+            <button class="tab1">Diagonstic Tests</button>
+          </div>
+        </div>
+        <div class="navbar-button">
+          <div id="btn-nav">
+            <button class="tab2">Offers</button>
+            <button class="tab2">Login/ Signup</button>
+            <button class="tab2">Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <br>
+  <br>
+  
+
+    <div id="productBoxParent">
+        <div id="offerBox">
+
+        </div>
+
+        <div id="boxRight">
+
+
     <div id="productimgeBox"></div>
     <div id="productDetailsBox"></div>
     <div class="divbar"></div>
     <div id="smallimgbox"></div>
+
+        
+   <div id="RecomendedProduct">
+
+        <h2>Similar Products</h2>
+        <!-- left slider -->
+        <span onclick="slider()">&#139;</span>
+        <!-- right slider -->
+        <span onclick="slider()">&#155;</span>
+        <!-- add and div and style the childs inide the div with your css -->
+        <section id="productsrecomended">
+
+
+        </section>
+   
+
+  
+
+
+    <div id="description">
+        <p class="headdingD">Description</p>
+        <p>Sensodyne is the top toothpaste brand across the globe that treats dental sensitivity. With Sensodyne toothpaste, people suffering from sensitive teeth can not only find relief but also enjoy daily activities. This makes Sensodyne the most recommended toothpaste by dentists for patients suffering from dental sensitivity. Its specially designed formula is clinically proven to provide all-day protection from sensitivity, making the toothpaste a favourite among 9 out of 10 doctors surveyed across the United States. Sensodyne Fresh Mint provides a fresh minty aftertaste for a clean and energetic feeling without any pain or sensitivity in teeth or gums.</p>
+        <p class="headdingD">Benefits</p>
+        <p>Sensodyne Fresh Mint toothpaste gives 24-hour protection and relief from the sensitivity of the oral cavity.</p>
+        <p>Its specially designed formulation allows long-lasting protection from sensitivity.</p>
+        <p>It gives complete protection from cavities.</p>
+        <p>Sensodyne Fresh Mint toothpaste offers a fresh and clean aftertaste as an added benefit.</p>
+        <p class="headdingD" >Ingredients</p>
+        <p>Potassium nitrate, Sodium fluoride, Sodium hydroxide, Pentasodium triphosphate, Sodium methyl cocoyl taurate, Hydrated silica, Sorbitol, PEG-8, Titanium dioxide, Cocamidopropyl betaine, Xanthan gum, flavour, sodium saccharin, sucralose, glycerin, water.</p>
+         <p class="headdingD">Uses</p>
+          <p>Sensodyne toothpaste is used to give relief to patients suffering from sensitive teeth. The fresh minty flavour also aids in keeping the oral cavity feeling fresh. The toothpaste boasts of its unique formula that gives prolonged protection against sensitivity and prevents tooth decay. It also helps to strengthen teeth and prevent disorders of the gum and foul breath.</p>
+           <p class="headdingD">How to Use</p>
+            <p>Sensodyne must be used twice a day but not more than three times a day. Apply an approximately 1-inch strip of the toothpaste on a toothbrush with soft bristles and brush for at least 1 minute. Replace the lid of the tube tightly to keep the contents dry. After using the toothpaste, spit out the contents. Do not swallow after brushing. This product is recommended for adults and children above 12 years of age.</p>
+         <p>Sensodyne is intended for oral use only.</p>
+          <p class="headdingD">FAQ</p>
+           <p class="headdingD">1. Is Sensodyne toothpaste effective?</p>
+           <p >Tooth sensitivity is a serious problem that requires urgent attention from dentists. Sensodyne must be used according to the advice of dentists to receive the best benefits and protection from sensitivity. In case the problem persists or worsens or remains the same even after 4 weeks, seek medical advice.</p>
+           <p class="headdingD">2. Can I develop allergies from using Sensodyne?</p>
+           <p>It is unlikely to develop any allergies from using Sensodyne. However, if you face any irritation stop using the toothpaste and consult a physician.</p>
+           <p class="headdingD">3. Can I develop cavities even after using the product?</p>
+           <p>Sensodyne is an integral part of daily dental care at home and helps protect from cavities. However, one may still develop cavities from other factors such as lifestyle habits, food consumption, the effectiveness of brushing, etc.</p>
+           <p class="headdingD">4. Can children use Sensodyne toothpaste?</p>
+           <p>For children younger than 12 years of age, use it as recommended by a dentist or doctor.</p>
+    </div>
+    <div class="featureAndDetails">
+        <p class="headdingD">Features and Details</p>
+        <p>Brand :<span>SENSODYNE</span> </p>
+        <p>Manufacturer Name : <span>Check Details</span> </p>
+        <p>Country of Origin : <span>India</span> </p>
+    </div>
+
+     <div class="Disclaimer">
+         <p>Disclaimer</p>
+         <p>If the seal of the product is broken it will be non-returnable.</p>
+     </div>
+    </div>
+
+    </div>
+
+
+
+    <div id="parentfooter">
+
+        <div class="Cfeatures">
+            <div class="f1">
+                <img src="https://assets.pharmeasy.in/web-assets/dist/9ac2da37.svg?dim=0x72&dpr=0.800000011920929&q=100" >
+                <p>1 Lakh+ Products</p>
+                <p>We maintain strict quality controls on all our partner retailers, so that you always get standard quality products.</p>
+            </div>
+            <div class="f2">
+                <img src="https://assets.pharmeasy.in/web-assets/dist/2f258fe0.svg?dim=0x72&dpr=0.800000011920929&q=100" >
+                <p>Secure Payment</p>
+                <p>100% secure and trusted payment protection</p>
+            </div>
+            <div class="f3">
+                <img src="https://assets.pharmeasy.in/web-assets/dist/256fe591.svg?dim=0x72&dpr=0.800000011920929&q=100">
+                <p>Easy Return</p>
+                <p>We have a new and dynamic return window policy for medicines and healthcare items. Refer FAQs section for more details.</p>
+            </div>
+
+        </div>
+
+        <div class="downlodeApp">
+            <div class="imagePhone"><img src="https://assets.pharmeasy.in/web-assets/dist/34a16ae8.jpg" ></div>
+             <div class="Dname">Download the App for Free</div> 
+             <br>
+
+            <div class="playStore">
+               
+            <div class="img1" ><img src="https://assets.pharmeasy.in/web-assets/dist/4e4f1cab.png" alt=""></div>
+            <div class="img2"><img src="https://assets.pharmeasy.in/web-assets/dist/83095c03.png" alt=""></div>
+          </div>
+        </div>
+
+        <div class="frame">
+
+        <div class="block1">
+            <div class="hedding">Company</div>
+            <div>Carrer</div>
+            <div>Blog </div>
+            <div>Patner with PharmEasy</div>
+            <div>Sell at PharmEasy </div>
+          </div>
+          <div class="block2">
+              <div class="hedding">Our Services</div>
+              <div>Order Medicine</div>
+              <div>Heathcare Products</div>
+              <div>Diagnostic Tests</div>
+          </div>
+          <div class="block3">
+              <div class="hedding">Covid Essentials</div>
+              <div>Devices</div>
+              <div>Nutrition &Fitness Supplements</div>
+              <div>Personal Care</div>
+              <div>Ayurvedic Care</div>
+              <div>Baby and Mom Care</div>
+              <div> Skin Care </div>
+              <div>Deabetic Care</div>
+              <div>Short Term Aliments</div>
+              <div>Lifestyle Aliments</div>
+              <div>Home Care</div>
+              <div>Women Care</div>
+          </div>
+          <div class="block4">
+              <div class="hedding">Need Help</div>
+              <div>Browse All Medicine</div>
+              <div>Browse All Molecules</div>
+              <div>FAQs</div>
+          </div>
+          <div class="block5">
+              <div class="hedding">Editorial Policy</div>
+              <div>Privacy Policy</div>
+              <div>Vulnerability Disclouser Policy</div>
+              <div>Terms and condition</div>
+              <div>Customer Support Policy</div>
+              <div>Return Policy</div>
+          </div>
+
+          <div class="block6">
+              <div class="hedding">FOLLOW US</div>
+         <div>
+          <a href="https://www.instagram.com/pharmeasyapp/" class="follow" target="_blank"><img src="https://image.flaticon.com/icons/png/128/733/733558.png" /></a>
+
+          <a href="https://www.facebook.com/pharmeasy/"  class="follow" target="_blank"><img src="https://img-premium.flaticon.com/png/128/739/premium/739135.png?token=exp=1626776342~hmac=7bb868badd799d788e565febd363fcaa" /></a>
+
+          <a href="https://www.youtube.com/channel/UCDats_DLX-bGZH3-KGu8JhA" class="follow" target="_blank"><img src="https://t3.ftcdn.net/jpg/01/20/86/82/240_F_120868287_B3SHmzHh7gh69OPLhcTuyzXoyuuwP0YQ.jpg" /></a>
+
+          <a href="https://twitter.com/pharmeasyapp/" class="follow" target="_blank"><img src="https://image.flaticon.com/icons/png/128/1409/1409937.png" /></a>
+          </div>
+        
+          </div>
+          </div>
+
+             <div class="block7">
+              <div class="hedding" >Our Payment Partners</div>
+              <div class="partners">
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/af0c6812.svg" alt="Google pay">
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/0e010044.svg" alt="">
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/1066bb1f.svg" alt="">
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/3a1a533d.svg" alt="">
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/fbea1701.svg" alt="">
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/4733a49d.svg" alt="">
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/b278e536.svg" alt="">
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/0aca2077.svg" alt="">
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/44a51ca5.svg" alt="">
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/d058b00d.svg" alt="">
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/e9445364.svg" alt="">
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/6e09c713.svg" alt="">
+                  <span id="pay"> © 2021 PharmEasy. All Rights Reserved</span>
+              </div>
+             
+              
+        </div>
+
+     </div>
+
+
 </body>
 
 <script src="showProductdetails.js"></script>
+<script src="RecomendedProduct.js"></script>

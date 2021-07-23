@@ -19,28 +19,28 @@ function appenditem(d) {
   //visiting link
   let vistingLink = document.createElement("p");
   vistingLink.innerHTML = `<a href="#">Visit ${d.name.split(" ")[0]} store</a>`;
-  vistingLink.setAttribute("class", "visitingLink");
+  vistingLink.setAttribute("id", "visitingLink");
 
   //rating
-  let rating = document.createElement("div");
-  rating.innerHTML = `<p>(342 ratings)</p>
+  let rating = document.createElement("div");  
+  rating.innerHTML = `<p>
   <span class="fa fa-star checked"></span>
   <span class="fa fa-star checked"></span> 
   <span class="fa fa-star checked"></span>
   <span class="fa fa-star"></span>
-  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span><span> (342 ratings) </span></p>
   `;
   rating.setAttribute("class", "prorating");
 
   //price
   let price = document.createElement("p");
-  price.innerHTML = `<strong>&#x20B9;${d.price} </strong>  MRP <del>${
+  price.innerHTML = `<strong>&#x20B9;${d.price} </strong> <span>  MRP <del>${
     d.price - 10
-  }</del>
+  }</del></span>
   <p>Inclusive of all taxes</p>
   `;
   price.setAttribute("class", "productprice");
-  price.style.fontWeight = "lighter";
+ 
 
   //button
 
