@@ -1,4 +1,5 @@
 let rightDiv = document.getElementById("checkout-details");
+// Details of the right side block... as address, amount, delivery charge, offers, etc.
 function addElementRightDiv() {
   let add_div = document.createElement("div");
   add_div.className = "address-div";
@@ -26,6 +27,7 @@ function addElementRightDiv() {
 }
 addElementRightDiv();
 
+// Buttons at the right side block
 function addButtons() {
   let btn_div = document.createElement("div");
   let coupon_btn = document.createElement("button");
@@ -39,6 +41,7 @@ function addButtons() {
 }
 addButtons();
 
+//order value, total amount to be paid, cart value
 function orderSummary() {
   let summary = document.createElement("div");
   summary.className = "summary";
@@ -73,3 +76,31 @@ function orderSummary() {
   rightDiv.append(summary);
 }
 orderSummary();
+// cart items, importing from localStorage
+function cartItems() {
+  let data = JSON.parse(localStorage.getItem("Productcart"));
+  data.forEach(function (item) {
+    let div = document.getElementById("cart");
+    let cart = document.createElement("div");
+    cart.className = "cart-items";
+    let cart_items = document.createElement("ul");
+    cart_items.className = "cart-items-list";
+    let cart_item = document.createElement("li");
+    cart_item.className = "cart-item";
+    let cart_box = document.createElement("div");
+    cart_item.appendChild(cart_box);
+    let cart_img = document.createElement("img");
+    cart_img.src = item.img;
+    cart_img.className = "cart-img";
+    let cart_name = document.createElement("h4");
+    cart_name.innerHTML = item.name;
+    let cart_price = document.createElement("p");
+    cart_price.innerHTML = "Rs " + item.price;
+    let cart_qty = document.createElement("p");
+    cart_qty.innerHTML = "x " + item.qty;
+    cart_box.append(cart_img, cart_name, cart_price, cart_qty);
+    cart.append(cart_item);
+    div.append(cart);
+  });
+}
+cartItems();

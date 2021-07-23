@@ -1,3 +1,4 @@
+/* Styling of whole section    */
 #parent {
   width: 70%;
   margin: auto;
@@ -9,11 +10,12 @@
 }
 #cart {
   height: 400px;
-  border: 1px solid #ccc;
 }
 #checkout-details {
   height: 100%;
 }
+
+/* Styling of right block    */
 
 .address-div {
   background-color: #f4f7fb;
@@ -80,4 +82,21 @@
 }
 .order-value {
   float: right;
+}
+
+/* Styling of cart items    */
+.cart-img {
+  float: left;
+  height: 125px;
+}
+.cart-item > div {
+  border: 1px solid #ccc;
+  height: 100%;
+  border-radius: 0.5em;
+}
+.cart-items-list {
+  list-style-type: none;
+}
+.cart-item {
+  list-style-type: none;
 }
