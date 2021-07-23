@@ -1028,3 +1028,8 @@ img {
   border: 2px solid rgb(0, 183, 255);
   background-color: blue;
 }
+
+#viewall {
+  float: right;
+  margin: 20px;
+}

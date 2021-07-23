@@ -2,52 +2,34 @@
   <link rel="stylesheet" href="navbar.css" />
   <link rel="stylesheet" href="home.css" />
   <link rel="stylesheet" href="sideDrawer.css">
+  <link rel="stylesheet" href="health.css">
+  <link rel="stylesheet" href="view.css">
+  <link rel="stylesheet" href="comment.css">
 </head>
 
 <body>
-<main>
-<!-- Side drawer -->
-    <div class="side-drawer">
-      <div class="drawerbar" id="drawerID">
-        <button
-          type="button"
-          onclick="myDrawer(this)"
-          class="toggle-collapse"
-          id="toggle-button"
-        >
-          <span class="toggle-icon"><br />X</span>
-        </button>
-        <div class="site-div">
-          <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" />
-        </div>
-        <h3 class="drawer-link">Quick Login/ Register</h3>
-        <div class="drawer-item">
-          <ul>
-            <li><input
-            type="email"
-            
-            class="drawer-link"
-            placeholder="Enter your email"/></li>
-            <li>
-              <input
-            type="password"
-            
-            class="drawer-link"
-            placeholder="Enter your password"
-          />
-            </li>
-          </ul>
-          
-          
-        </div>
-        <button type="button" id="continue-btn">Continue</button>
-        <h6>
-          By clicking continue, you agree with our
-          <a href="#">Privacy Policy</a>
-        </h6>
+
+  <!-- Side drawer -->
+  <div class="side-drawer">
+    <div class="drawerbar" id="drawerID">
+      <button type="button" onclick="myDrawer(this)" class="toggle-collapse" id="toggle-button">
+        <span class="toggle-icon"><br />X</span>
+      </button>
+      <div class="site-div">
+        <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" />
       </div>
+      <h3 class="drawer-link">Quick Login/ Register</h3>
+      <div class="drawer-item">
+        <input type="number" step="0.01" class="drawer-link" placeholder="Enter your phone number" />
+      </div>
+      <button type="button" id="continue-btn">Continue</button>
+      <h6>
+        By clicking continue, you agree with our
+        <a href="#">Privacy Policy</a>
+      </h6>
     </div>
-    <!-- End of Side drawer -->
+  </div>
+  <!-- End of Side drawer -->
 
 
   <header id="nav-head">
@@ -299,61 +281,127 @@
 <br>
 <br>
 <br>
- 
+
 
 <!-- Featuresd Brand -->
 
 
-      <div id="features">
+<div id="features">
 
-        <h2>Featured Brands</h2>
-        <!-- left slider -->
-        <span onclick="slider()">&#139;</span>
-        <!-- right slider -->
-        <span onclick="slider()">&#155;</span>
-        <!-- add and div and style the childs inide the div with your css -->
-        <section id="productsfeature">
+  <h2>Featured Brands</h2>
+  <!-- left slider -->
+  <span onclick="slider()">&#139;</span>
+  <!-- right slider -->
+  <span onclick="slider()">&#155;</span>
+  <!-- add and div and style the childs inide the div with your css -->
+  <section id="productsfeature">
 
 
-        </section>
-    </div> 
+  </section>
+</div>
 <!-- 
 Recomended Product list -->
-    
-   <div id="RecomendedProduct">
 
-        <h2>Recommended For You</h2>
-        <!-- left slider -->
-        <span onclick="slider()">&#139;</span>
-        <!-- right slider -->
-        <span onclick="slider()">&#155;</span>
-        <!-- add and div and style the childs inide the div with your css -->
-        <section id="productsrecomended">
+<div id="RecomendedProduct">
+
+  <h2>Recommended For You</h2>
+  <!-- left slider -->
+  <span onclick="slider()">&#139;</span>
+  <!-- right slider -->
+  <span onclick="slider()">&#155;</span>
+  <!-- add and div and style the childs inide the div with your css -->
+  <section id="productsrecomended">
 
 
-        </section>
-   </div>
+  </section>
+</div>
 <!-- 
  Timer Deal -->
-   
-    <div id="timer_container">
-        <img src="https://assets.pharmeasy.in/web-assets/dist/cc9b301d.svg">
 
-        <div id="timer_slogan">Deals of the Day</div>
-        <div id="timer_bar"></div>
-        <div id="timer_box"></div>
-        <div id="dealTimer">
-            <!-- left slider -->
-            <span onclick="slider()"><font id="timer_left">&#139;</font></span>
-            <!-- right slider -->
-            <span onclick="slider()"><font id="timer_right">&#155;</font></span>
-            <!-- add and div and style the childs inide the div with your css -->
-            <section id="DealTimer">
-            </section>
-        </div>
-       
-    </div>
+<div id="timer_container">
 
+  <img src="https://assets.pharmeasy.in/web-assets/dist/cc9b301d.svg">
+  <div id="timer_slogan">Deals of the Day</div>
+
+  <div id="timer_bar"></div>
+  <div id="timer_box"></div>
+
+  <div id="dealTimer">
+    <!-- left slider -->
+    <div id="viewall">view All</div>
+
+    <span onclick="slider()">
+      <font id="timer_left">&#139;</font>
+    </span>
+    <!-- right slider -->
+    <span onclick="slider()">
+      <font id="timer_right">&#155;</font>
+    </span>
+    <!-- add and div and style the childs inide the div with your css -->
+    <section id="DealTimer">
+    </section>
+  </div>
+
+</div>
+
+<!-- healthpart -->
+<div id="health_page">
+
+  <h2>Health Articles</h2>
+  <!-- left slider -->
+  <span onclick="slider()">&#139;</span>
+  <!-- right slider -->
+  <span onclick="slider()">&#155;</span>
+  <!-- add and div and style the childs inide the div with your css -->
+  <section id="health_products">
+
+
+  </section>
+</div>
+
+
+
+<!-- review part -->
+<div id="view">
+  <div class="re_view">
+    <div><img src="https://assets.pharmeasy.in/web-assets/dist/4d2f7c48.svg" alt=""></div>
+    <div class="number">50 Lakh +</div>
+    <div class="comment">Families Served</div>
+  </div>
+  <div class="re_view">
+    <div><img src="https://assets.pharmeasy.in/web-assets/dist/92c372bb.svg" alt=""></div>
+    <div class="number">1.5 Crore +</div>
+    <div class="comment">Orders Delivered</div>
+  </div>
+  <div class="re_view">
+    <div><img src="https://assets.pharmeasy.in/web-assets/dist/f2d557d3.svg" alt=""></div>
+    <div class="number">22000 +</div>
+    <div class="comment">Pincodes Served</div>
+  </div>
+  <div class="re_view">
+    <div><img src="https://assets.pharmeasy.in/web-assets/dist/773ae9c5.svg" alt=""></div>
+    <div class="number">1 Lakh +</div>
+    <div class="comment">Medicines Available</div>
+  </div>
+</div>
+<!-- review part end -->
+
+<!-- comeent part -->
+<div id="Review">
+
+  <h2>What our customers have to say</h2>
+  <!-- left slider -->
+  <span onclick="slider()">&#8594;</span>
+  <!-- right slider -->
+  <span onclick="slider()">&#8592;</span>
+  <!-- add and div and style the childs inide the div with your css -->
+  <section id="review_products">
+
+
+  </section>
+</div>
+
+<!-- comment part end -->
 
 
 <!--footer part -->
@@ -540,6 +588,8 @@ Recomended Product list -->
 <script src="timer.js"></script>
 
 
+<script src="health.js"></script>
+<script src="comment.js"></script>
 
 <script src="drawer.js">
 

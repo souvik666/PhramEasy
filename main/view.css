@@ -1,0 +1,19 @@
+#view {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.re_view {
+  padding: 10px;
+}
+.number {
+  font-size: 45px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.comment {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 15px;
+}

@@ -62,3 +62,6 @@ function currentSlide(index) {
     //create a new timer
     timer = setTimeout(showSlides, 4000);
 }
+document.getElementById("viewall").addEventListener("click", function(){
+    window.location.href = "viewAll.html"
+})

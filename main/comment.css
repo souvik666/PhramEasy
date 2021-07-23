@@ -1,0 +1,95 @@
+/* /// #Review { */
+        
+            /* height: 350px; */
+          
+            /* overflow: hidden; */
+            /* position: relative; */
+        /* } */
+        #Review span {
+            float: right;
+            top: 40%;
+            font-size: 60px;
+            font-weight: bold;
+           color: black;
+            cursor: pointer;
+            left: .5%;
+            z-index: 1;
+     }
+
+    #Review  span:nth-of-type(2) {
+         left: 98%;
+         text-align: right;
+     }
+
+     #Review  section {
+         width: 98%;
+         height: 200px; 
+         background: #f4f4f4;
+         /* margin: 10px auto; */
+         display: flex;
+         justify-content: left;
+         overflow-x: auto;
+     }
+
+    #Review  section::-webkit-scrollbar {
+         visibility: hidden;
+     }
+
+      #Review section  div {
+          min-width: 330px; 
+          height: 200px; 
+         position: relative;
+         left: 0;
+         /* text-align: center; */
+         /* padding-top: 60px; */
+         font-size: 100px;
+         font-weight: bold;
+         margin: 0px 10px;
+         /* color: white; */
+         /* background: chocolate; */
+         /* border: 1px solid blue; */
+         transition: 0.5s;
+         margin: 10px 20px;
+     }
+    #Review  section img{
+         height: 20px;
+         width: 17px;
+         /* border: 1px solid orange; */
+         border-radius: 15px;
+         margin-top: 20px;
+        
+     }
+    #Review  section p{
+            font-size: 12px;
+            margin-top: 10px;
+            color: black;
+            font-family: sans-serif;
+           
+          
+     }
+     #Review  section p:last-child{
+            margin-left: 15px;
+            color:gray;
+            font-weight: 50;
+             background-color: rgb(235, 252, 229);
+             
+      }
+      #Review  section p:first-child {
+           font-weight:700;
+          color: #4f585e!important;
+        }
+
+       #Review section p:nth-child(2) {
+           color:gray;
+           margin-top: -15px;
+           padding: 0;
+        }
+         
+        #Review h2{
+         font-size: 20px;
+        font-weight: 700;
+        line-height: 1.5;
+        color: #4f585e;
+        margin-bottom: -55px;
+
+        }
