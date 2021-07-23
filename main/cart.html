@@ -1,35 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart</title>
-    <link rel="stylesheet" href="cart.css" />
-  </head>
-  <body>
-    <main id="parent">
-      <div id="container">
-        <div id="left-container">
-          <div id="cart">
-            <!-- Will get cart items from localStorage -->
-          </div>
-          <div id="RecomendedProduct">
-            <h2>Recommended For You</h2>
-            <!-- left slider -->
-            <span onclick="slider()">&#139;</span>
-            <!-- right slider -->
-            <span onclick="slider()">&#155;</span>
-            <!-- add and div and style the childs inide the div with your css -->
-            <section id="productsrecomended"></section>
-          </div>
-        </div>
-        <div id="checkout-details">
-          <!-- Right block of the Cart Page -->
-        </div>
-      </div>
-    </main>
-  </body>
-  <script src="cart.js"></script>
-  <script src="RecomendedProduct.js"></script>
-</html>
+<head>
+  
+  <style>
+    #cartcontainer div {
+      width: 500px;
+      background-color: rgb(255, 255, 255);
+      margin: 3%;
+    }
+
+    .productname {
+      float: right;
+      font-weight: bold;
+      margin-right: 100px
+    }
+
+    #cartcontainer img {
+      height: 100px;
+      width: 100px;
+    }
+
+    .brand {
+      font-weight: lighter;
+    }
+    .del{
+      
+      float: right;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div id="cartcontainer"></div>
+</body>
+<script src="cart.js"></script>
