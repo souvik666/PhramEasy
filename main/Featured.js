@@ -112,6 +112,7 @@ function appendpro() {
     let div = document.createElement("div");
     div.setAttribute("class", "features");
     div.addEventListener("click", function () {
+      window.open("showProductdetails.html");
       showdetail(el);
     });
 
@@ -220,5 +221,5 @@ slider();
 function showdetail(el) {
   // refere this code -->https://github.com/souvik666/PhramEasy/blob/structure/productdetails/productDetails.js
   // window.location.href = "showProductdetails.html";
-  //localStorage.setItem("prodetaails", JSON.stringify(el));
+  localStorage.setItem("prodetaails", JSON.stringify(el));
 }
