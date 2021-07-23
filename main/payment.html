@@ -1,0 +1,17 @@
+<head>
+
+</head>
+
+<body>
+    <div id="bill">
+        <div id="name"></div>
+        <div id="addr"></div>
+    </div>
+
+</body>
+<script>
+    let data = JSON.parse(localStorage.getItem("userchekout"))
+    document.getElementById("name").innerHTML = data.name;
+
+    document.getElementById("addr").innerHTML = data.state
+</script>

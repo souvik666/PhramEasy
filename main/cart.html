@@ -1,5 +1,5 @@
 <head>
-  
+
   <style>
     #cartcontainer div {
       width: 500px;
@@ -21,15 +21,38 @@
     .brand {
       font-weight: lighter;
     }
-    .del{
-      
+
+    .del {
+
       float: right;
     }
 
+    #Address {
+      float: right
+    }
   </style>
 </head>
 
 <body>
+  <div id="ammount"></div>
+  <div id="Address">
+    <input type="text" placeholder="name" id="name">
+    <br>
+    <br>
+
+    <input type="text" placeholder="street adress" id="street">
+
+    <br>
+    <br>
+
+    <input type="text" placeholder="state" id="state">
+    <br>
+    <br>
+    <input type="text" placeholder="pin" id="pin">
+    <br>
+    <br>
+    <button id="payment">Proceed to Pyment</button>
+  </div>
 
   <div id="cartcontainer"></div>
 </body>

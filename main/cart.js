@@ -28,12 +28,41 @@ function appendpro() {
     let btn = document.createElement("p");
     btn.innerHTML = "🗑";
     btn.setAttribute("class", "del");
-    btn.addEventListener("click", function(){
-      
-    })
+    btn.addEventListener("click", function () {});
 
-    div.append(img, btn,pname,);
+    div.append(img, btn, pname);
     main_div.append(div);
   });
 }
 appendpro();
+
+//set billing information
+let submit = document
+  .getElementById("payment")
+  .addEventListener("click", function () {
+    let name = document.getElementById("name").value;
+    let street = document.getElementById("street").value;
+    let pin = document.getElementById("pin").value;
+    let state = document.getElementById("state").value;
+    let data = {
+      name,
+      street,
+      state,
+      pin,
+    };
+
+    if (localStorage.getItem("userchekout") == null) {
+      localStorage.setItem("userchekout", JSON.stringify(data));
+    }
+    window.location.href = "payment.html";
+  });
+
+function cartsum() {
+  let data = JSON.parse(localStorage.getItem("cart"));
+  let sum = 0;
+  for (let i = 0; i < data.length; i++) {
+    sum += Number(data[i].price);
+  }
+  document.getElementById("ammount").innerHTML = sum;
+}
+cartsum();
