@@ -1,0 +1,83 @@
+#parent {
+  width: 70%;
+  margin: auto;
+}
+#container {
+  display: grid;
+  grid-template-columns: 60% 35%;
+  grid-gap: 5%;
+}
+#cart {
+  height: 400px;
+  border: 1px solid #ccc;
+}
+#checkout-details {
+  height: 100%;
+}
+
+.address-div {
+  background-color: #f4f7fb;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5em;
+}
+.address-div > div {
+  margin: 0;
+}
+
+#checkout-details button {
+  width: 100%;
+  display: block;
+  margin: 1.5em 0;
+  padding: 1.1em;
+  border-radius: 0.5em;
+}
+
+.address-change {
+  display: flex;
+  margin: 0;
+}
+.address-change > h4 {
+  flex-grow: 2;
+}
+.address-change > a {
+  text-decoration: none;
+  margin-top: 1.2em;
+  margin-right: 0.4em;
+  color: green;
+}
+.address-change + p {
+  margin: 0;
+  font-size: 0.9em;
+  margin-bottom: 4%;
+}
+.address-bot {
+  margin: 3%;
+  border-top: 1px dashed #ccc;
+  font-size: 0.9em;
+}
+.address-bot > p {
+  float: left;
+  padding: 0.5em;
+}
+.address-bot > h4 {
+  float: right;
+  padding: 0 0.5em;
+}
+.apply-btn {
+  border: 2px solid #2a6965;
+  background-color: #fff;
+  color: #2a6965;
+}
+.buy-btn {
+  background-color: #2a6965;
+  color: #fff;
+  border: none;
+}
+.order-text {
+  float: left;
+}
+.order-value {
+  float: right;
+}
