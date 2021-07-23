@@ -49,7 +49,7 @@
           <div id="btn-nav">
             <button class="tab2">Offers</button>
             <button class="tab2">Login/ Signup</button>
-            <button class="tab2">Cart</button>
+            <button id="cart" class="tab2">Cart</button>
           </div>
         </div>
       </div>
@@ -253,3 +253,8 @@
 
 <script src="showProductdetails.js"></script>
 <script src="RecomendedProduct.js"></script>
+<script>
+  document.getElementById("cart").addEventListener("click", function(){
+    window.location.href = "cart.html"
+  })
+</script>
