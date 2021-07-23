@@ -69,21 +69,18 @@
   padding: 1em;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  margin: 0;
-}
 .drawer-item {
   width: 90%;
-  padding: 0 5%;
+  padding: 0 2%;
   border-radius: 0.5em;
 }
+.drawer-item > ul {
+  list-style-type: none;
+}
 .drawer-item + button {
-  width: 90%;
-  margin: 2% 5%;
+  width: 76%;
+  margin: 1%;
+  margin-left: 12%;
   background-color: #37857e;
   border: none;
   padding: 3%;
@@ -101,4 +98,9 @@ input[type="number"]::-webkit-outer-spin-button {
 .drawer-item + button + h6 > a {
   text-decoration: none;
   color: #37857e;
+}
+.drawer-link {
+  width: 300px;
+  height: 50px;
+  margin-bottom: 5px;
 }
