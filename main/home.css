@@ -1,4 +1,5 @@
 /* All the main changes in homepage design will be done here. */
+
 #safety-measures {
   display: flex;
   flex-direction: row;
@@ -202,6 +203,7 @@ body {
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+  margin-top: -100px;
 }
 /* Position the "next button" to the right */
 .next {
@@ -263,6 +265,7 @@ body {
   top: 55%;
   left: 50%;
   margin-left: -50px;
+  margin-top: -82px;
 }
 
 #parent {
@@ -761,281 +764,267 @@ span {
   width: 100%;
 }
 
+/* Feature products */
 
-  /* Feature products */
+#features {
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+}
 
-        #features{
-          width: 100%;
-          position: relative;
-          margin-top: 50px;
-        }
+#features > span {
+  position: absolute;
+  top: 40%;
+  font-size: 60px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  left: 0.5%;
+  z-index: 1;
+}
 
-        #features > span {
-            position: absolute;
-            top: 40%;
-            font-size: 60px;
-            font-weight: bold;
-            color: black;
-            cursor: pointer;
-            left: .5%;
-            z-index: 1;
-        }
- 
-       #features span:nth-of-type(2) {
-            left: 98%;
-            text-align: right;
-        } 
+#features span:nth-of-type(2) {
+  left: 98%;
+  text-align: right;
+}
 
-       #features  section {
-            width: 98%;
-            height: 250px;
-            background: white;
-            margin: 10px auto;
-            display: flex;
-            justify-content: left;
-            overflow-x: auto;
-        }
+#features section {
+  width: 98%;
+  height: 250px;
+  background: white;
+  margin: 10px auto;
+  display: flex;
+  justify-content: left;
+  overflow-x: auto;
+}
 
-        #features  section::-webkit-scrollbar {
-            visibility: hidden;
-        }
+#features section::-webkit-scrollbar {
+  visibility: hidden;
+}
 
-        #features section div {
-            
-            height: 200px;
-            position: relative;
-            left: 0;
-            /* text-align: center; */
-            
-            font-size: 100px;
-            font-weight: bold;
-            margin: 10px 20px;
-            color: rgb(14, 13, 13);
-            background: rgb(255, 255, 255);
-            transition: 0.5s;
-        }
+#features section div {
+  height: 200px;
+  position: relative;
+  left: 0;
+  /* text-align: center; */
 
-        #features > section img {
-            height: 220px;
-            width: 150px;
-            /* border: 1px solid black; */
-            border-radius: 10px;
-            padding: 10px;
-             margin-bottom: 40px;
-        }
+  font-size: 100px;
+  font-weight: bold;
+  margin: 10px 20px;
+  color: rgb(14, 13, 13);
+  background: rgb(255, 255, 255);
+  transition: 0.5s;
+}
 
-        #features > section p {
-            font-size: small;
-        }
-        .features{
-            width: 250px;
-            /* border: 1px solid blue; */
-        }
-        .features{
-            border-radius: 10px;
-        }     
+#features > section img {
+  height: 220px;
+  width: 150px;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 40px;
+}
 
-
+#features > section p {
+  font-size: small;
+}
+.features {
+  width: 250px;
+  /* border: 1px solid blue; */
+}
+.features {
+  border-radius: 10px;
+}
 
 /*         
         Recomended Products */
 
-        #RecomendedProduct{
-          width: 100%;
-          position: relative;
-          margin-bottom: -200px;
-          margin-top: 50px;
-        }
-       #RecomendedProduct > span {
-            position: absolute;
-            top: 25%;
-            font-size: 60px;
-            font-weight: bold;
-            color: black;
-            cursor: pointer;
-            left: .5%;
-            z-index: 1;
-        }
+#RecomendedProduct {
+  width: 100%;
+  position: relative;
+  margin-bottom: -200px;
+  margin-top: 50px;
+}
+#RecomendedProduct > span {
+  position: absolute;
+  top: 25%;
+  font-size: 60px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  left: 0.5%;
+  z-index: 1;
+}
 
-       #RecomendedProduct span:nth-of-type(2) {
-            left: 98%;
-            text-align: right;
-        }
+#RecomendedProduct span:nth-of-type(2) {
+  left: 98%;
+  text-align: right;
+}
 
-       #RecomendedProduct section {
-            width: 98%;
-            height: 400px;
-            background: #f4f4f4;
-            margin: 10px auto;
-            display: flex;
-            justify-content: left;
-            overflow-x: auto;
-        }
+#RecomendedProduct section {
+  width: 98%;
+  height: 400px;
+  background: #f4f4f4;
+  margin: 10px auto;
+  display: flex;
+  justify-content: left;
+  overflow-x: auto;
+}
 
-       #RecomendedProduct section::-webkit-scrollbar {
-            visibility: hidden;
-        }
+#RecomendedProduct section::-webkit-scrollbar {
+  visibility: hidden;
+}
 
-       #RecomendedProduct > section div {
-            
-            height: 180px;
-            position: relative;
-            left: 0;
-            /* text-align: center; */
-            
-            font-size: 100px;
-            font-weight: bold;
-            margin: 10px 20px;
-            color: rgb(14, 13, 13);
-            background: rgb(255, 255, 255);
-            transition: 0.5s;
-        }
+#RecomendedProduct > section div {
+  height: 180px;
+  position: relative;
+  left: 0;
+  /* text-align: center; */
 
-       #RecomendedProduct > section img {
-            height: 130px;
-            width: 130px;
-            /* border: 1px solid black; */
-            border-radius: 10px;
-            padding: 10px;
-             margin-bottom: 40px;
-        }
+  font-size: 100px;
+  font-weight: bold;
+  margin: 10px 20px;
+  color: rgb(14, 13, 13);
+  background: rgb(255, 255, 255);
+  transition: 0.5s;
+}
 
-       #RecomendedProduct > section p {
-            font-size: small;
-        }
-        .RecomendedProduct{
-            width: 250px;
-            /* border: 1px solid blue; */
-        }
-        .RecomendedProduct{
-            border: 1px solid gray;
-            border-radius: 10px;
-        }
+#RecomendedProduct > section img {
+  height: 130px;
+  width: 130px;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 40px;
+}
 
-
-
+#RecomendedProduct > section p {
+  font-size: small;
+}
+.RecomendedProduct {
+  width: 250px;
+  /* border: 1px solid blue; */
+}
+.RecomendedProduct {
+  border: 1px solid gray;
+  border-radius: 10px;
+}
 
 /* 
         Time dealer */
 
+#timer_box {
+  height: 30px;
+  color: rgb(233, 21, 56);
+  float: left;
+  margin: 5%;
+}
 
-              #timer_box {
-            height: 30px;
-            color: rgb(233, 21, 56);
-            float: left;
-            margin: 5%;
-           
-            
-        }
+#timer_container {
+  width: 100%;
+  height: 300px;
+  background-color: #fff2f2;
+  margin-bottom: 250px;
+  margin-top: 150px;
+}
 
-        #timer_container {
-            width: 100%;
-            height: 300px;
-            background-color: #FFF2F2;
-            margin-bottom: 250px;
-            margin-top: 150px;
-            
-        }
+#timer_container img {
+  float: left;
+  margin-top: 5%;
+}
 
-        #timer_container img {
-            float: left;
-            margin-top: 5%;
-        }
+#timer_slogan {
+  float: left;
+  margin: 5%;
+}
 
-        #timer_slogan {
-            float: left;
-            margin: 5%;
-        }
+#timer_bar {
+  height: 80px;
+  width: 5px;
+  background-color: rgb(255, 130, 255);
+  float: left;
+  margin-top: 5%;
+}
 
-        #timer_bar {
-            height: 80px;
-            width: 5px;
-            background-color: rgb(255, 130, 255);
-            float: left;
-            margin-top: 5%;
-        }
+/* products setion */
+#DealTimer {
+  width: 100%;
+  height: 400px;
+  margin: 200px auto;
+  overflow: hidden;
+  position: relative;
+}
 
-        /* products setion */
-        #DealTimer {
-            width: 100%;
-            height: 400px;
-            margin: 200px auto;
-            overflow: hidden;
-            position: relative;
-        }
+#DealTimer span {
+  position: absolute;
+  top: 20%;
+  font-size: 60px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  left: 0.5%;
+  z-index: 1;
+}
 
-      
+#DealTimer span:nth-of-type(2) {
+  left: 98%;
+  text-align: right;
+}
 
-        #DealTimer span {
-            position: absolute;
-            top: 20%;
-            font-size: 60px;
-            font-weight: bold;
-            color: black;
-            cursor: pointer;
-            left: .5%;
-            z-index: 1;
-        }
+#DealTimer section {
+  width: 98%;
+  height: 330px;
+  background: #f4f4f4;
+  margin: 10px auto;
+  display: flex;
+  justify-content: left;
+  overflow-x: auto;
+}
 
-        #DealTimer span:nth-of-type(2) {
-            left: 98%;
-            text-align: right;
-        }
+#DealTimer section::-webkit-scrollbar {
+  visibility: hidden;
+}
+#DealTimer section div {
+  height: 200px;
+  position: relative;
+  left: 0;
+  text-align: center;
 
-        #DealTimer section {
-            width: 98%;
-            height: 330px;
-            background: #f4f4f4;
-            margin: 10px auto;
-            display: flex;
-            justify-content: left;
-            overflow-x: auto;
-        }
+  font-size: 100px;
+  font-weight: bold;
+  margin: 10px 20px;
+  color: rgb(14, 13, 13);
+  background: rgb(255, 255, 255);
+  transition: 0.5s;
+}
 
-        #DealTimer section::-webkit-scrollbar {
-            visibility: hidden;
-        }
-         #DealTimer section div {
+#DealTimer section img {
+  height: 100px;
+  width: 100px;
+}
 
-            height: 200px;
-            position: relative;
-            left: 0;
-            text-align: center;
-
-            font-size: 100px;
-            font-weight: bold;
-            margin: 10px 20px;
-            color: rgb(14, 13, 13);
-            background: rgb(255, 255, 255);
-            transition: 0.5s;
-        }
-
-        #DealTimer section img {
-            height: 100px;
-            width: 100px;
-        }
-
-        section p {
-            font-size: small;
-        }
-        img{
-            margin-bottom: 20px;
-        }
-        #timer_classname{
-            border: 1px solid rgb(92, 90, 90);
-            border-radius: 10px;
-        }
-        #timer_left,#timer_right{
-            color: rgb(220, 235, 21);
-            border: 2px solid rgb(0, 183, 255);
-        }
-        #timer_right:hover{
-            color: rgb(235, 99, 21);
-            border: 2px solid rgb(0, 183, 255);
-            background-color: blue;
-        }
-        #timer_left:hover{
-            color: rgb(235, 99, 21);
-            border: 2px solid rgb(0, 183, 255);
-            background-color: blue;
-        }
+section p {
+  font-size: small;
+}
+img {
+  margin-bottom: 20px;
+}
+#timer_classname {
+  border: 1px solid rgb(92, 90, 90);
+  border-radius: 10px;
+}
+#timer_left,
+#timer_right {
+  color: rgb(220, 235, 21);
+  border: 2px solid rgb(0, 183, 255);
+}
+#timer_right:hover {
+  color: rgb(235, 99, 21);
+  border: 2px solid rgb(0, 183, 255);
+  background-color: blue;
+}
+#timer_left:hover {
+  color: rgb(235, 99, 21);
+  border: 2px solid rgb(0, 183, 255);
+  background-color: blue;
+}
