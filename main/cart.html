@@ -1,59 +1,215 @@
 <head>
+  <link rel="stylesheet" type="text/css" href="cart.css" />
+   <link rel="stylesheet" type="text/css" href="view.css" />
+   <link rel="stylesheet" href="navbar.css" />
+   
+  
 
-  <style>
-    #cartcontainer div {
-      width: 500px;
-      background-color: rgb(255, 255, 255);
-      margin: 3%;
-    }
-
-    .productname {
-      float: right;
-      font-weight: bold;
-      margin-right: 100px
-    }
-
-    #cartcontainer img {
-      height: 100px;
-      width: 100px;
-    }
-
-    .brand {
-      font-weight: lighter;
-    }
-
-    .del {
-
-      float: right;
-    }
-
-    #Address {
-      float: right
-    }
-  </style>
 </head>
 
 <body>
-  <div id="ammount"></div>
+
+  
+  <header id="nav-head">
+    <div class="navbar">
+      <div class="navbar-top">
+        <div class="navbar-logo">
+          <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="Pharmeasy logo" />
+        </div>
+        <div class="navbar-search">
+          <div id="search-box">
+
+            <select name="city" id="city">
+              <option value="select-city">Select City   </option>
+              <option value="bengaluru">Bengaluru</option>
+              <option value="delhi">Delhi NCR</option>
+              <option value="pune">Pune</option>
+              <option value="mumbai">Mumbai</option>
+            </select>
+
+            
+            <input class="search-input" type="text" placeholder="Search here" />
+            <div id="suggestion">
+
+
+            </div>
+            <!-- <button>&#128269;</button> -->
+          </div>
+        </div>
+        <div class="navbar-side">
+          <button onclick="" id="nav-btn">
+            Don't have a prescription? <br /><span>Get started </span><i class="arrow down"></i>
+          </button>
+        </div>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-tab">
+          <div id="tab-nav">
+            <button class="tab1">Order Medicines</button>
+            <button class="tab1">Healthcare Products</button>
+            <button class="tab1">Diagonstic Tests</button>
+          </div>
+        </div>
+        <div class="navbar-button">
+          <div id="btn-nav">
+            <button class="tab2">Offers</button>
+            <button class="tab2">Login/ Signup</button>
+            <button class="tab2" id="cart">Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  </main>
+ 
   <div id="Address">
-    <input type="text" placeholder="name" id="name">
+    <br>
+    <br>
+    <input type="text" placeholder="                   NAME" id="name">
     <br>
     <br>
 
-    <input type="text" placeholder="street adress" id="street">
+    <input type="text" placeholder="          STREET ADDRESS " id="street">
 
     <br>
     <br>
 
-    <input type="text" placeholder="state" id="state">
+    <input type="text" placeholder="                   STATE" id="state">
     <br>
     <br>
-    <input type="text" placeholder="pin" id="pin">
+    <input type="text" placeholder="                PIN CODE" id="pin">
     <br>
     <br>
+     <div id="ammount"> </div>
+     <br>
     <button id="payment">Proceed to Pyment</button>
   </div>
 
+
+  <div id="parentCart">
   <div id="cartcontainer"></div>
+</div>
+
+
+
+
+ <div id="parentfooter">
+
+        <div class="Cfeatures">
+            <div class="f1">
+                <img src="https://assets.pharmeasy.in/web-assets/dist/9ac2da37.svg?dim=0x72&dpr=0.800000011920929&q=100" >
+                <p>1 Lakh+ Products</p>
+                <p>We maintain strict quality controls on all our partner retailers, so that you always get standard quality products.</p>
+            </div>
+            <div class="f2">
+                <img src="https://assets.pharmeasy.in/web-assets/dist/2f258fe0.svg?dim=0x72&dpr=0.800000011920929&q=100" >
+                <p>Secure Payment</p>
+                <p>100% secure and trusted payment protection</p>
+            </div>
+            <div class="f3">
+                <img src="https://assets.pharmeasy.in/web-assets/dist/256fe591.svg?dim=0x72&dpr=0.800000011920929&q=100">
+                <p>Easy Return</p>
+                <p>We have a new and dynamic return window policy for medicines and healthcare items. Refer FAQs section for more details.</p>
+            </div>
+
+        </div>
+
+        <div class="downlodeApp">
+            <div class="imagePhone"><img src="https://assets.pharmeasy.in/web-assets/dist/34a16ae8.jpg" ></div>
+             <div class="Dname">Download the App for Free</div> 
+             <br>
+
+            <div class="playStore">
+               
+            <div class="img1" ><img src="https://assets.pharmeasy.in/web-assets/dist/4e4f1cab.png" alt=""></div>
+            <div class="img2"><img src="https://assets.pharmeasy.in/web-assets/dist/83095c03.png" alt=""></div>
+          </div>
+        </div>
+
+        <div class="frame">
+
+        <div class="block1">
+            <div class="hedding">Company</div>
+            <div>Carrer</div>
+            <div>Blog </div>
+            <div>Patner with PharmEasy</div>
+            <div>Sell at PharmEasy </div>
+          </div>
+          <div class="block2">
+              <div class="hedding">Our Services</div>
+              <div>Order Medicine</div>
+              <div>Heathcare Products</div>
+              <div>Diagnostic Tests</div>
+          </div>
+          <div class="block3">
+              <div class="hedding">Covid Essentials</div>
+              <div>Devices</div>
+              <div>Nutrition &Fitness Supplements</div>
+              <div>Personal Care</div>
+              <div>Ayurvedic Care</div>
+              <div>Baby and Mom Care</div>
+              <div> Skin Care </div>
+              <div>Deabetic Care</div>
+              <div>Short Term Aliments</div>
+              <div>Lifestyle Aliments</div>
+              <div>Home Care</div>
+              <div>Women Care</div>
+          </div>
+          <div class="block4">
+              <div class="hedding">Need Help</div>
+              <div>Browse All Medicine</div>
+              <div>Browse All Molecules</div>
+              <div>FAQs</div>
+          </div>
+          <div class="block5">
+              <div class="hedding">Editorial Policy</div>
+              <div>Privacy Policy</div>
+              <div>Vulnerability Disclouser Policy</div>
+              <div>Terms and condition</div>
+              <div>Customer Support Policy</div>
+              <div>Return Policy</div>
+          </div>
+
+          <div class="block6">
+              <div class="hedding">FOLLOW US</div>
+         <div>
+          <a href="https://www.instagram.com/pharmeasyapp/" class="follow" target="_blank"><img src="https://image.flaticon.com/icons/png/128/733/733558.png" /></a>
+
+          <a href="https://www.facebook.com/pharmeasy/"  class="follow" target="_blank"><img src="https://img-premium.flaticon.com/png/128/739/premium/739135.png?token=exp=1626776342~hmac=7bb868badd799d788e565febd363fcaa" /></a>
+
+          <a href="https://www.youtube.com/channel/UCDats_DLX-bGZH3-KGu8JhA" class="follow" target="_blank"><img src="https://t3.ftcdn.net/jpg/01/20/86/82/240_F_120868287_B3SHmzHh7gh69OPLhcTuyzXoyuuwP0YQ.jpg" /></a>
+
+          <a href="https://twitter.com/pharmeasyapp/" class="follow" target="_blank"><img src="https://image.flaticon.com/icons/png/128/1409/1409937.png" /></a>
+          </div>
+        
+          </div>
+          </div>
+
+             <div class="block7">
+              <div class="hedding" >Our Payment Partners</div>
+              <div class="partners">
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/af0c6812.svg" >
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/0e010044.svg" >
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/1066bb1f.svg" >
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/3a1a533d.svg" >
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/fbea1701.svg" >
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/4733a49d.svg" >
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/b278e536.svg" >
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/0aca2077.svg" >
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/44a51ca5.svg" alt="">
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/d058b00d.svg" alt="">
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/e9445364.svg" alt="">
+                  <img src="https://assets.pharmeasy.in/web-assets/dist/6e09c713.svg" alt="">
+                  <span id="pay"> © 2021 PharmEasy. All Rights Reserved</span>
+              </div>
+             
+              
+        </div>
+
+     </div>
+     </div>
+
+
+
 </body>
 <script src="cart.js"></script>

@@ -1,4 +1,4 @@
-function appendpro() {
+function appendpro(obj) {
   let data = JSON.parse(localStorage.getItem("cart"));
   let main_div = document.getElementById("cartcontainer");
   data.forEach(function (el) {
@@ -28,7 +28,9 @@ function appendpro() {
     let btn = document.createElement("p");
     btn.innerHTML = "🗑";
     btn.setAttribute("class", "del");
-    btn.addEventListener("click", function () {});
+    btn.addEventListener("click", function () {
+      removep(obj);
+    });
 
     div.append(img, btn, pname);
     main_div.append(div);
@@ -63,6 +65,18 @@ function cartsum() {
   for (let i = 0; i < data.length; i++) {
     sum += Number(data[i].price);
   }
-  document.getElementById("ammount").innerHTML = sum;
+  document.getElementById("ammount").innerHTML = "Cart Value  : ₹  " + sum;
 }
 cartsum();
+
+function removep(el) {
+  let arr = [];
+  let data = JSON.parse(localStorage.getItem("cart"));
+  for (var i = 0; i < data.length; i++) {
+    if (data[i].name === el.name) {
+      data.splice(0, 1);
+      appendpro(data);
+    }
+  }
+}
+ removep();
