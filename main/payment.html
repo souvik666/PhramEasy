@@ -1,17 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="payment.css">
 </head>
-
 <body>
-    <div id="bill">
-        <div id="name"></div>
-        <div id="addr"></div>
+    <div class="payment_upper">
+        <div class="upper">
+            <div class="phrmaeasy"><img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png"></div>
+            <div class="secure">100% Secure Payments</div>
+        </div>
     </div>
 
-</body>
-<script>
-    let data = JSON.parse(localStorage.getItem("userchekout"))
-    document.getElementById("name").innerHTML = data.name;
 
-    document.getElementById("addr").innerHTML = data.state
-</script>
+    <div class="payment_mid">
+        <div> <h3>Select Delivery Prefer</h3> </div>
+
+        <div class="mid_part">
+            <div class="left">
+                <div class="left_up">
+                    <div>Deliver Address :</div>
+                  
+                </div>
+                    <br>    
+                <div class="left_mid">
+                    <div>By Today Before 3PM <input type="radio"></div>
+                    <div>Additional Priority Fee of 300 RS Aplicable</div>
+                </div>
+                <br>
+                <div class="left_bottom">
+                    <div>By Today Before 10PM <input type="radio"></div>
+                    <div>Additional Priority Fee of 100 Rs Aplicable</div>
+                </div>
+            </div>
+
+
+            <div class="right">
+              
+                <div class="right_mid">
+                   <div> Order Summary</div>
+                    <div>Cart Value</div>
+                    <div>Delivery Charges</div>
+                    <div>Amount to be paid</div>
+                </div>
+                <br>
+                <div class="right_bottom">
+                   <div> Total saving :</div>
+                </div>
+                <br>
+                  <div class="right_up">
+                      <button onclick="paymentDone() " class="main-button">Proceed to pay</button>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+<script src="payment.js"></script>
