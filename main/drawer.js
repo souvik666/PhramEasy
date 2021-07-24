@@ -29,14 +29,14 @@ function registerHere() {
       <h3 class="drawer-link">Register here</h3>
       <div class="drawer-item">
         <ul>
-          <li><input type="text"  class="drawer-link" placeholder="Enter your name" /></li>
-          <li><input type="number"  class="drawer-link" placeholder="Enter your contact no." /></li>
-          <li><input type="email"  class="drawer-link" placeholder="Enter your email" /></li>
-          <li><input type="password"  class="drawer-link" placeholder="Enter your password" /></li>
+          <li><input type="text" id="registerName" class="drawer-link" placeholder="Enter your name" /></li>
+          <li><input type="number" id="registerNumber"  class="drawer-link" placeholder="Enter your contact no." /></li>
+          <li><input type="email" id="registerEmail"  class="drawer-link" placeholder="Enter your email" /></li>
+          <li><input type="password" id="registerPassword"  class="drawer-link" placeholder="Enter your password" /></li>
         </ul>
         
       </div>
-      <button type="button" id="continue-btn">Register</button>
+      <button type="button" id="continue-btn" onclick="registerUser()">Register</button>
       <h6>
         By clicking continue, you agree with our
         <a href="#">Privacy Policy</a> <br>
@@ -57,16 +57,57 @@ function goBack() {
       <h3 class="drawer-link">Quick Login</h3>
       <div class="drawer-item">
         <ul>
-          <li><input type="email"  class="drawer-link" placeholder="Enter your email" /></li>
-          <li><input type="password"  class="drawer-link" placeholder="Enter your password" /></li>
+          <li><input type="email" id="login-email"  class="drawer-link" placeholder="Enter your email" /></li>
+          <li><input type="password" id="login-password"   class="drawer-link" placeholder="Enter your password" /></li>
         </ul>
         
       </div>
-      <button type="button" id="continue-btn">Login</button>
+      <button type="button" id="continue-btn" onclick="loginUser()">Login</button>
       <h6>
         By clicking continue, you agree with our
         <a href="#">Privacy Policy</a> <br>
       </h6>
       <h5>Don't have an account?</h5>
       <button type="button" id="continue-btn" onclick="registerHere()">Register Here</button>`;
+}
+
+function registerUser() {
+  let name = document.getElementById("registerName").value;
+  let number = document.getElementById("registerNumber").value;
+  let email = document.getElementById("registerEmail").value;
+  let password = document.getElementById("registerPassword").value;
+
+  let userData = {
+    name: name,
+    number: number,
+    email: email,
+    password: password,
+  };
+  let array = JSON.parse(localStorage.getItem("users"));
+  if (array == null) {
+    array = [];
+  } else {
+    array.push(userData);
+  }
+  localStorage.setItem("users", JSON.stringify(array));
+}
+
+function loginUser() {
+  let email = document.getElementById("login-email").value;
+  let password = document.getElementById("login-password").value;
+  let array = JSON.parse(localStorage.getItem("users"));
+  let count = 0;
+  for (let i = 0; i < array.length; i++) {
+    let e = array[i].email;
+    let p = array[i].password;
+
+    if (e === email && p === password) {
+      window.location.href = "cart.html";
+      count++;
+      break;
+    }
+  }
+  if (count === 0) {
+    alert("Invalid email or password");
+  }
 }
