@@ -72,3 +72,7 @@ document.getElementById("viewall").addEventListener("click", function () {
 document.getElementById("cart").addEventListener("click", function () {
   window.location.href = "cart.html";
 });
+
+function showHealthCareProduct(){
+  window.location.href="healthCare_products.html";
+}
