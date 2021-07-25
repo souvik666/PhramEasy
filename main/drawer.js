@@ -102,7 +102,7 @@ function loginUser() {
     let p = array[i].password;
 
     if (e === email && p === password) {
-      window.location.href = "cart.html";
+      window.location.href = "homePage.html";
       count++;
       break;
     }
