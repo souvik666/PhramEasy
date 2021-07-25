@@ -29,10 +29,10 @@ function registerHere() {
       <h3 class="drawer-link">Register here</h3>
       <div class="drawer-item">
         <ul>
-          <li><input type="text" id="registerName" class="drawer-link" placeholder="Enter your name" /></li>
-          <li><input type="number" id="registerNumber"  class="drawer-link" placeholder="Enter your contact no." /></li>
-          <li><input type="email" id="registerEmail"  class="drawer-link" placeholder="Enter your email" /></li>
-          <li><input type="password" id="registerPassword"  class="drawer-link" placeholder="Enter your password" /></li>
+          <li><input type="text" id="registerName" class="drawer-link" placeholder="Enter your name" required/></li>
+          <li><input type="number" id="registerNumber"  class="drawer-link" placeholder="Enter your contact no." required/></li>
+          <li><input type="email" id="registerEmail"  class="drawer-link" placeholder="Enter your email" required/></li>
+          <li><input type="password" id="registerPassword"  class="drawer-link" placeholder="Enter your password" required/></li>
         </ul>
         
       </div>
@@ -57,8 +57,8 @@ function goBack() {
       <h3 class="drawer-link">Quick Login</h3>
       <div class="drawer-item">
         <ul>
-          <li><input type="email" id="login-email"  class="drawer-link" placeholder="Enter your email" /></li>
-          <li><input type="password" id="login-password"   class="drawer-link" placeholder="Enter your password" /></li>
+          <li><input type="email" id="login-email"  class="drawer-link" placeholder="Enter your email" required/></li>
+          <li><input type="password" id="login-password"   class="drawer-link" placeholder="Enter your password" required/></li>
         </ul>
         
       </div>
@@ -83,12 +83,16 @@ function registerUser() {
     email: email,
     password: password,
   };
+
   let array = JSON.parse(localStorage.getItem("users"));
   if (array == null) {
     array = [];
   } else {
     array.push(userData);
+    alert(`You have successfully registered ${userData.name}`);
+    window.location.href = "homePage.html";
   }
+
   localStorage.setItem("users", JSON.stringify(array));
 }
 
@@ -100,8 +104,10 @@ function loginUser() {
   for (let i = 0; i < array.length; i++) {
     let e = array[i].email;
     let p = array[i].password;
+    let n = array[i].name;
 
     if (e === email && p === password) {
+      alert(`You have succefully logged in ${n}`);
       window.location.href = "homePage.html";
       count++;
       break;

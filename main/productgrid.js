@@ -16,6 +16,10 @@ function appendpro(d) {
     meta.innerHTML = d.metadata;
     div.append(img, Pname, meta, p_Price);
     main_div.append(div);
+    div.addEventListener("click", function () {
+      window.open("showProductdetails.html");
+      showdetail(d);
+    });
   });
 }
 appendpro(JSON.parse(localStorage.getItem("dealTimer")));

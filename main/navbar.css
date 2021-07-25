@@ -2,9 +2,6 @@ body {
   margin: 0;
 }
 
-
-
-
 .navbar {
   display: flex;
   width: 100%;
@@ -53,7 +50,7 @@ body {
 }
 #city {
   height: 95%;
-  width: 110px !important;
+  width: 150px !important;
   color: #37857e;
   font-size: 1rem;
   border-top-left-radius: 5px;
@@ -65,7 +62,7 @@ body {
 }
 #search-box > input {
   height: 92%;
-  width: 75%;
+  width: 60%;
   font-size: 0.9rem;
   padding: 0 10px;
   border: 1px solid #fff;

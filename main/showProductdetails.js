@@ -22,7 +22,7 @@ function appenditem(d) {
   vistingLink.setAttribute("id", "visitingLink");
 
   //rating
-  let rating = document.createElement("div");  
+  let rating = document.createElement("div");
   rating.innerHTML = `<p>
   <span class="fa fa-star checked"></span>
   <span class="fa fa-star checked"></span> 
@@ -40,13 +40,13 @@ function appenditem(d) {
   <p>Inclusive of all taxes</p>
   `;
   price.setAttribute("class", "productprice");
- 
 
   //button
 
   let btn = document.createElement("button");
   btn.textContent = "Add To Cart";
   btn.addEventListener("click", function () {
+    alert(`Product added to cart\n${d.name}`);
     addToCart(d);
   });
   btn.setAttribute("class", "addtocartButton");
