@@ -104,24 +104,3 @@
   height: 50px;
   margin-bottom: 5px;
 }
-
-.drawer-item + button + h6 + h5 {
-  width: 90%;
-  margin: 2% 5%;
-  padding: 3%;
-  border-radius: 0.5em;
-  font-size: 0.8em;
-  font-family: arial;
-  text-align: center;
-}
-
-.drawer-item + button + h6 + h5 + button {
-  width: 76%;
-  margin: 1%;
-  margin-left: 12%;
-  background-color: #37857e;
-  border: none;
-  padding: 3%;
-  color: #fff;
-  border-radius: 0.5em;
-}

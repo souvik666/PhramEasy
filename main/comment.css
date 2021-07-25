@@ -5,6 +5,11 @@
             /* overflow: hidden; */
             /* position: relative; */
         /* } */
+
+        #Review{
+            max-width: 90%;
+            margin: auto;
+        }
         #Review span {
             float: right;
             top: 40%;
@@ -23,7 +28,7 @@
 
      #Review  section {
          width: 98%;
-         height: 200px; 
+         height: 250px; 
          background: #f4f4f4;
          /* margin: 10px auto; */
          display: flex;

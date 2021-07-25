@@ -1,13 +1,15 @@
 #health_page {
-    width: 100%;
+    width: 90%;
+    margin: auto;
     height: 400px;
     /* margin: 200px auto; */
     overflow: hidden;
     position: relative;
+    margin-bottom: 10px;
 }
 #health_page span {
     position: absolute;
-    top: 40%;
+    top: 35%;
     font-size: 60px;
     font-weight: bold;
     color: black;
@@ -52,10 +54,11 @@
 }
 #health_page section img{
     height: 230px;
-    width: 420px;
+    width: 380px;
     /* border: 1px solid orange; */
     border-radius: 15px;
 }
 #health_page section p{
     font-size: small;
+      color: #4F585E;
 }
