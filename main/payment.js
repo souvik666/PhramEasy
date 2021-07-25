@@ -71,3 +71,15 @@ document.getElementById("totalsaving").innerHTML=`Total saving : 99`
 let x = document.getElementById("cartvalue").innerHTML
 xnum = Number(x.split(" ")[3])
 document.getElementById("TAmount").innerHTML = `Amount to be paid ${xnum}`
+
+
+ var checker = document.getElementById("checkme");
+ var sendbtn = document.getElementById("sendNewSms");
+
+ checker.onchange = function () {
+   if (this.checked) {
+     sendbtn.disabled = false;
+   } else {
+     sendbtn.disabled = true;
+   }
+ };
