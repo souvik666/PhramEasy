@@ -1,5 +1,5 @@
 # PharmEasy Clone 
-Hi! We are **Team PharmEasy**. We have made the clone of pharmeasy.in in this project and this clone has been made by I (Souvik), Sumit, Vikram & Deevanshu.
+Hi! We are **Team PharmEasy**. We have made the clone of pharmeasy(PharmEasy is India's one of the top online pharmacy apps. You can purchase medicines online & get it delivered to your home within 24-48 hours).in in this project and this clone has been made by I (Souvik), Sumit, Vikram & Deevanshu.
 **This project is made using pure HTML, CSS & JavaScript.
 # Different parts of our project
 - Landing Page
